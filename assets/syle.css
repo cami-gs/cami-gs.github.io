@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camila González Silva</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Camila González Silva</h1>
+    <p>Sociologist | Research, methodological learning, and digital tools for socially relevant knowledge</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a sociologist based in Chile. My work focuses on social inequality, economic sociology, housing, everyday life, and qualitative and mixed methods.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>This section will include selected academic and professional projects.</p>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p><a href="assets/pdf/Camila_Gonzalez_Silva_CV.pdf" target="_blank">Download academic CV (PDF)</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: camila.gonzalez.3@ug.uchile.cl</p>
+      <p>
+        <a href="https://github.com/cami-gs" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/cami-gs/" target="_blank">LinkedIn</a> |
+        <a href="https://orcid.org/0009-0001-7562-7321" target="_blank">ORCID</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
