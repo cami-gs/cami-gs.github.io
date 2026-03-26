@@ -309,6 +309,19 @@ main {
   text-decoration: underline;
 }
 
+/* Closing image */
+.closing-image {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem 2rem;
+}
+
+.closing-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .hero {
@@ -352,6 +365,10 @@ main {
 
   main {
     padding: 2.6rem 1.5rem 4rem 1.5rem;
+  }
+
+  .closing-image {
+    padding: 2.2rem 1.5rem 3.5rem 1.5rem;
   }
 
   .content-section {
@@ -437,6 +454,10 @@ main {
   }
 
   main {
+    padding: 2rem 1.2rem 3rem 1.2rem;
+  }
+
+  .closing-image {
     padding: 2rem 1.2rem 3rem 1.2rem;
   }
 
