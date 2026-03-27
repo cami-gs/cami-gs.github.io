@@ -259,6 +259,29 @@ main {
   margin-bottom: 0.9rem;
 }
 
+/* Research interests layout */
+.interests-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.interests-text {
+  min-width: 0;
+}
+
+.interests-image {
+  margin: 0;
+  width: 100%;
+}
+
+.interests-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Project cards */
 .project-card {
   background: var(--card);
@@ -371,6 +394,15 @@ main {
     padding: 2.2rem 1.5rem 3.5rem 1.5rem;
   }
 
+  .interests-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .interests-image {
+    max-width: 420px;
+  }
+
   .content-section {
     grid-template-columns: 20px 1fr;
     gap: 0.9rem;
@@ -459,6 +491,10 @@ main {
 
   .closing-image {
     padding: 2rem 1.2rem 3rem 1.2rem;
+  }
+
+  .interests-image {
+    max-width: 100%;
   }
 
   .content-section {
