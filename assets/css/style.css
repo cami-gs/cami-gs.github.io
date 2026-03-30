@@ -305,6 +305,44 @@ main {
   display: block;
 }
 
+/* Projects subsection title */
+.projects-subtitle {
+  margin-top: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-family: "Cormorant Garamond", "EB Garamond", Garamond, serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.projects-subtitle a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.projects-subtitle a:hover,
+.projects-subtitle a:focus {
+  color: var(--accent-soft);
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+/* Links inside project cards */
+.project-card h3 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card h3 a:hover,
+.project-card h3 a:focus {
+  color: var(--accent-soft);
+  border-bottom: 1px solid var(--accent-soft);
+}
+
 /* Contact section with image on the right */
 .contact-layout {
   display: grid;
@@ -458,6 +496,11 @@ main {
     max-width: 420px;
   }
 
+  .projects-subtitle {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+  }
+
   /* Contact responsive: text first, image below */
   .contact-layout {
     grid-template-columns: 1fr;
@@ -564,6 +607,12 @@ main {
 
   .projects-image {
     max-width: 100%;
+  }
+
+  .projects-subtitle {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
   }
 
   /* Contact responsive: full width image below text */
