@@ -454,6 +454,14 @@ main {
   .section-body p {
     font-size: 1.05rem;
   }
+  .contact-layout {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.contact-image {
+  max-width: 420px;
+}
 }
 
 /* Mobile */
@@ -461,7 +469,9 @@ main {
   .hero {
     padding: 2.6rem 1.2rem 2.3rem 1.2rem;
   }
-
+.contact-image {
+  max-width: 100%;
+}
   .hero-topline {
     gap: 0.7rem;
   }
@@ -573,4 +583,26 @@ main {
     margin-right: 0.7rem;
     margin-bottom: 0.3rem;
   }
+  /* Contact layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.contact-image {
+  margin: 0;
+  width: 100%;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-text {
+  min-width: 0;
+}
 }
