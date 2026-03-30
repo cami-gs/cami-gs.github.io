@@ -282,6 +282,29 @@ main {
   display: block;
 }
 
+/* Selected projects layout */
+.projects-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.projects-text {
+  min-width: 0;
+}
+
+.projects-image {
+  margin: 0;
+  width: 100%;
+}
+
+.projects-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Project cards */
 .project-card {
   background: var(--card);
@@ -403,6 +426,15 @@ main {
     max-width: 420px;
   }
 
+  .projects-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .projects-image {
+    max-width: 420px;
+  }
+
   .content-section {
     grid-template-columns: 20px 1fr;
     gap: 0.9rem;
@@ -494,6 +526,10 @@ main {
   }
 
   .interests-image {
+    max-width: 100%;
+  }
+
+  .projects-image {
     max-width: 100%;
   }
 
