@@ -271,14 +271,11 @@ I am currently exploring visual methodologies for social research. On the one ha
 
     <!-- =====================================================
          SECCIÓN PROJECTS / PROYECTOS
-         También tiene dos columnas:
-         - texto con tarjetas de proyectos
-         - imagen lateral
-
-         Se incorporó un bloque de "Collective Projects /
-         Proyectos colectivos". El título de ese bloque es un
-         enlace que lleva a otra página donde puedes reunir
-         recursos colaborativos.
+         Se reorganizó para separar:
+         - proyectos individuales/seleccionados
+         - proyectos colectivos
+         La tarjeta de "Education in Carceral Contexts" pasa al
+         bloque de proyectos colectivos.
        ===================================================== -->
     <section id="projects" class="content-section">
       <div class="section-label" aria-hidden="true">✴︎</div>
@@ -292,10 +289,8 @@ I am currently exploring visual methodologies for social research. On the one ha
             </h2>
 
             <!--
-              Cada bloque .project-card representa un proyecto.
-              Puedes duplicar uno de estos bloques si quieres agregar más proyectos.
+              Bloque de proyectos académicos / de investigación seleccionados.
             -->
-
             <div class="project-card">
               <h3>
                 <span class="lang lang-en" lang="en">Family Financial Socialization in Chile</span>
@@ -324,9 +319,7 @@ I am currently exploring visual methodologies for social research. On the one ha
 
             <!--
               Subtítulo del bloque de proyectos colectivos.
-              Este título es clickeable y lleva a otra página.
-              Si cambias el nombre de la página destino,
-              reemplaza "collective-projects.html" por la ruta correcta.
+              Este título es clickeable y lleva a la página específica.
             -->
             <h3 class="projects-subtitle">
               <a href="collective-projects.html">
@@ -336,9 +329,7 @@ I am currently exploring visual methodologies for social research. On the one ha
             </h3>
 
             <!--
-              Tarjeta del boletín de mapeo colectivo.
-              Puedes agregar más tarjetas debajo para incluir
-              otros recursos o experiencias colaborativas.
+              Recurso colectivo 1.
             -->
             <div class="project-card">
               <h3>
@@ -364,15 +355,22 @@ I am currently exploring visual methodologies for social research. On the one ha
               </p>
               <!--
                 Enlace directo al PDF del boletín.
-                Si cambias el nombre del archivo o su ubicación,
-                actualiza la ruta en href=.
+                Más adelante puedes quitarlo de esta sección y dejar
+                solo el acceso desde collective-projects.html si prefieres.
               -->
             </div>
-          </div>
+
+            <!--
+              Recurso colectivo 2.
+              Por ahora no incluye PDF, pero queda ya ubicado dentro
+              del bloque correcto para que después agregues materiales.
+            -->
             <div class="project-card">
               <h3>
-                <span class="lang lang-en" lang="en">Education in Carceral Contexts</span>
-                <span class="lang lang-es" lang="es">Educación en contextos de encierro</span>
+                <a href="collective-projects.html">
+                  <span class="lang lang-en" lang="en">Education in Carceral Contexts</span>
+                  <span class="lang lang-es" lang="es">Educación en contextos de encierro</span>
+                </a>
               </h3>
               <p class="lang lang-en" lang="en">
                 Collective and socio-educational work focused on education in prison contexts from a gender perspective.
@@ -381,6 +379,7 @@ I am currently exploring visual methodologies for social research. On the one ha
                 Trabajo colectivo y socioeducativo centrado en la educación en contextos de encierro desde una perspectiva de género.
               </p>
             </div>
+          </div>
 
           <figure class="projects-image">
             <img src="assets/img/fondo_pagina.png" alt="Collage-style visual composition with hands, brackets, punctuation marks, and visual research motifs">
