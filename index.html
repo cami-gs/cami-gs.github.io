@@ -1,22 +1,79 @@
 <!DOCTYPE html>
+<!--
+  Tipo de documento HTML5.
+  No es necesario cambiar esta línea.
+-->
+
 <html lang="en" data-lang="en">
+<!--
+  lang="en" indica que el sitio carga inicialmente en inglés.
+  data-lang="en" permite que el botón de idioma muestre inglés por defecto.
+  Si quieres que el sitio abra primero en español, cambia ambos a "es".
+-->
+
 <head>
   <meta charset="UTF-8">
+  <!--
+    Permite que se vean bien tildes, eñes y caracteres especiales.
+    No conviene cambiar esto.
+  -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    Hace que el sitio se adapte bien a celulares y tablets.
+    No conviene cambiar esto.
+  -->
+
   <title>Camila Ignacia González Silva</title>
+  <!--
+    Este es el título que aparece en la pestaña del navegador.
+    Cámbialo por tu nombre.
+  -->
+
   <meta name="description" content="Academic and professional portfolio of Camila Ignacia González Silva: sociology, research, projects, and CV.">
+  <!--
+    Esta es una breve descripción del sitio.
+    Puede aparecer en buscadores.
+    Cámbiala por una descripción corta de tu perfil.
+  -->
+
   <link rel="stylesheet" href="assets/css/style.css">
+  <!--
+    Esta línea conecta el HTML con tu archivo de estilos CSS.
+    Solo cámbiala si el archivo style.css está en otra carpeta o tiene otro nombre.
+  -->
 </head>
+
 <body>
+  <!-- =========================================================
+       ENCABEZADO PRINCIPAL / HERO
+       Aquí va la presentación inicial del sitio:
+       - nombre
+       - descripción breve
+       - menú
+       - imagen principal
+     ========================================================= -->
+
   <header class="hero">
     <div class="hero-inner">
+
       <div class="hero-topline">
         <p class="eyebrow">
+          <!--
+            Frase corta que resume el perfil.
+            Hay una versión en inglés y una en español.
+            Cambia ambos textos si adaptas esta plantilla.
+          -->
           <span class="lang lang-en" lang="en">Sociology · Research · Methodological Learnings</span>
           <span class="lang lang-es" lang="es">Sociología · Investigación · Aprendizajes metodológicos</span>
         </p>
 
         <div class="language-switch" aria-label="Language switcher">
+          <!--
+            Botones para cambiar entre inglés y español.
+            No conviene modificar la estructura.
+            Solo usa esta parte tal como está.
+          -->
           <button class="lang-btn active" data-lang="en" type="button" aria-pressed="true">EN</button>
           <button class="lang-btn" data-lang="es" type="button" aria-pressed="false">ES</button>
         </div>
@@ -25,15 +82,32 @@
       <div class="hero-grid">
         <div class="hero-text">
           <h1>Camila Ignacia González Silva</h1>
+          <!--
+            Tu nombre principal.
+            Cámbialo por tu nombre completo o nombre profesional.
+          -->
 
           <p class="lead lang lang-en" lang="en">
             Chilean Sociologist, interested in social inequalities, materialities and everyday life, education in carceral contexts, and socially engaged knowledge production.
           </p>
+
           <p class="lead lang lang-es" lang="es">
             Socióloga chilena, interesada en desigualdades sociales, materialidades y vida cotidiana, educación en contextos de encierro y producción de conocimiento con incidencia social.
           </p>
+          <!--
+            Este es el texto breve de presentación.
+            Debes cambiar ambas versiones: inglés y español.
+          -->
 
           <nav class="main-nav" aria-label="Main navigation">
+            <!--
+              Menú principal del sitio.
+              Cada enlace lleva a una sección de la misma página.
+              Puedes cambiar los nombres visibles, pero es importante
+              mantener los href (#about, #interests, etc.) si las secciones
+              siguen usando esos mismos id.
+            -->
+
             <a href="#about">
               <span class="lang lang-en" lang="en">About</span>
               <span class="lang lang-es" lang="es">Sobre mí</span>
@@ -71,23 +145,59 @@
 
         <figure class="hero-image">
           <img src="assets/img/building.jpg" alt="Black and white analogue photograph of a residential building in Santiago de Chile">
+          <!--
+            Imagen principal del encabezado.
+            Para cambiarla:
+            1. Guarda tu imagen en la carpeta assets/img/
+            2. Cambia el nombre del archivo en src=
+            3. Cambia el texto alt= describiendo la imagen
+          -->
+
           <figcaption>
             <span class="lang lang-en" lang="en">Santiago de Chile, 2024. Analogue photograph by Camila Ignacia González Silva.</span>
             <span class="lang lang-es" lang="es">Santiago de Chile, 2024. Fotografía análoga por Camila Ignacia González Silva.</span>
           </figcaption>
+          <!--
+            Pie de foto de la imagen principal.
+            Cambia ambas versiones si usas otra imagen.
+          -->
         </figure>
       </div>
     </div>
   </header>
 
+  <!-- =========================================================
+       AVISO BREVE BAJO EL ENCABEZADO
+       Sirve para mostrar un mensaje corto, por ejemplo:
+       "Sitio en construcción"
+     ========================================================= -->
+
   <div class="site-note">
     <p class="lang lang-en" lang="en">This site is currently under construction.</p>
     <p class="lang lang-es" lang="es">Este sitio se encuentra actualmente en construcción.</p>
+    <!--
+      Puedes cambiar este mensaje por otro aviso breve.
+      Recuerda editar ambas versiones.
+    -->
   </div>
 
+  <!-- =========================================================
+       CONTENIDO PRINCIPAL DEL SITIO
+     ========================================================= -->
+
   <main>
+
+    <!-- =====================================================
+         SECCIÓN ABOUT / SOBRE MÍ
+         Aquí va una presentación más desarrollada.
+       ===================================================== -->
     <section id="about" class="content-section">
       <div class="section-label" aria-hidden="true">✴︎</div>
+      <!--
+        Este símbolo decorativo acompaña el título de la sección.
+        No es necesario cambiarlo.
+      -->
+
       <div class="section-body">
         <h2>
           <span class="lang lang-en" lang="en">About</span>
@@ -101,13 +211,29 @@
         <p class="lang lang-es" lang="es">
           Soy socióloga y vivo en Chile. Mi trabajo se sitúa en la investigación cualitativa y métodos mixtos, y se orienta a la producción de conocimiento riguroso con incidencia social. Actualmente complemento mi formación en sociología con estudios en Programación y Análisis de Sistemas para fortalecer mis herramientas de investigación y difusión.
         </p>
+        <!--
+          Texto principal de la sección Sobre mí.
+          Edita ambas versiones con tu propia presentación.
+        -->
       </div>
     </section>
 
+    <!-- =====================================================
+         SECCIÓN RESEARCH INTERESTS / INTERESES DE INVESTIGACIÓN
+         Esta sección tiene dos columnas:
+         - texto
+         - imagen
+       ===================================================== -->
     <section id="interests" class="content-section">
       <div class="section-label" aria-hidden="true">✴︎</div>
+
       <div class="section-body">
         <div class="interests-layout">
+          <!--
+            Este contenedor organiza texto e imagen en columnas.
+            No conviene cambiar su estructura.
+          -->
+
           <div class="interests-text">
             <h2>
               <span class="lang lang-en" lang="en">Research Interests</span>
@@ -124,17 +250,34 @@ I am currently exploring visual methodologies for social research. On the one ha
               Desigualdad social, sociología económica, vivienda y vida cotidiana, socialización económica y financiera, educación en contextos de encierro, interculturalidad, entornos materiales y organización social, y metodologías cualitativas y mixtas. 
               Actualmente estoy indagando en metodologías visuales para la investigación social. Por un lado, a partir del uso de R y la programación para visualizar datos y, por otro, el uso de fotografías para la investigación social. En la sección "notas" encontrarás algunos apuntes sobre este tema. 
             </p>
+            <!--
+              Texto de intereses de investigación.
+              Edita ambas versiones.
+            -->
           </div>
 
           <figure class="interests-image">
             <img src="assets/img/photovoice.png" alt="Collage-style image related to research interests in urban life, visual methods, and social observation">
+            <!--
+              Imagen de esta sección.
+              Para cambiarla:
+              - reemplaza el nombre del archivo en src=
+              - cambia el texto alt=
+            -->
           </figure>
         </div>
       </div>
     </section>
 
+    <!-- =====================================================
+         SECCIÓN PROJECTS / PROYECTOS
+         También tiene dos columnas:
+         - texto con tarjetas de proyectos
+         - imagen lateral
+       ===================================================== -->
     <section id="projects" class="content-section">
       <div class="section-label" aria-hidden="true">✴︎</div>
+
       <div class="section-body">
         <div class="projects-layout">
           <div class="projects-text">
@@ -142,6 +285,11 @@ I am currently exploring visual methodologies for social research. On the one ha
               <span class="lang lang-en" lang="en">Selected Projects</span>
               <span class="lang lang-es" lang="es">Proyectos en los que he participado</span>
             </h2>
+
+            <!--
+              Cada bloque .project-card representa un proyecto.
+              Puedes duplicar uno de estos bloques si quieres agregar más proyectos.
+            -->
 
             <div class="project-card">
               <h3>
@@ -185,13 +333,22 @@ I am currently exploring visual methodologies for social research. On the one ha
 
           <figure class="projects-image">
             <img src="assets/img/fondo_pagina.png" alt="Collage-style visual composition with hands, brackets, punctuation marks, and visual research motifs">
+            <!--
+              Imagen lateral de la sección Projects.
+              Puedes cambiar archivo y descripción.
+            -->
           </figure>
         </div>
       </div>
     </section>
 
+    <!-- =====================================================
+         SECCIÓN CV
+         Aquí se muestra un enlace para descargar el CV en PDF.
+       ===================================================== -->
     <section id="cv" class="content-section">
       <div class="section-label" aria-hidden="true">✴︎</div>
+
       <div class="section-body">
         <h2>
           <span class="lang lang-en" lang="en">Curriculum Vitae</span>
@@ -211,44 +368,83 @@ I am currently exploring visual methodologies for social research. On the one ha
             <span class="lang lang-es" lang="es">Descargar CV académico (PDF)</span>
           </a>
         </p>
+        <!--
+          Para cambiar el CV:
+          - guarda tu PDF en assets/pdf/
+          - cambia el nombre del archivo en href=
+          - puedes también cambiar el texto del botón
+        -->
       </div>
     </section>
 
-<section id="contact" class="content-section">
-  <div class="section-label" aria-hidden="true">✴︎</div>
-  <div class="section-body">
-    <div class="contact-layout">
-      <figure class="contact-image">
-        <img src="assets/img/web-1.png" alt="Urban visual composition of Santiago de Chile in blue, green, and violet tones">
-      </figure>
+    <!-- =====================================================
+         SECCIÓN CONTACT / CONTACTO
+         Tiene dos columnas:
+         - texto
+         - imagen
+         En pantallas pequeñas, el CSS hará que la imagen pase abajo.
+       ===================================================== -->
+    <section id="contact" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
 
-      <div class="contact-text">
-        <h2>
-          <span class="lang lang-en" lang="en">Contact</span>
-          <span class="lang lang-es" lang="es">Contacto</span>
-        </h2>
+      <div class="section-body">
+        <div class="contact-layout">
+          <div class="contact-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Contact</span>
+              <span class="lang lang-es" lang="es">Contacto</span>
+            </h2>
 
-        <p>
-          <span class="lang lang-en" lang="en">Email:</span>
-          <span class="lang lang-es" lang="es">Correo:</span>
-          <a href="mailto:camila.gonzalez.3@ug.uchile.cl">camila.gonzalez.3@ug.uchile.cl</a>
-        </p>
+            <p>
+              <span class="lang lang-en" lang="en">Email:</span>
+              <span class="lang lang-es" lang="es">Correo:</span>
+              <a href="mailto:camila.gonzalez.3@ug.uchile.cl">camila.gonzalez.3@ug.uchile.cl</a>
+            </p>
 
-        <p class="contact-links">
-          <a href="https://github.com/cami-gs" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/cami-gs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://orcid.org/0009-0001-7562-7321" target="_blank" rel="noopener noreferrer">ORCID</a>
-        </p>
+            <p class="contact-links">
+              <a href="https://github.com/cami-gs" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/cami-gs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://orcid.org/0009-0001-7562-7321" target="_blank" rel="noopener noreferrer">ORCID</a>
+            </p>
+            <!--
+              Aquí van tus datos de contacto.
+              Puedes cambiar:
+              - el correo
+              - GitHub
+              - LinkedIn
+              - ORCID
+              - agregar o quitar enlaces
+            -->
+          </div>
+
+          <figure class="contact-image">
+            <img src="assets/img/web-1.png" alt="Urban visual composition of Santiago de Chile in blue, green, and violet tones">
+            <!--
+              Imagen de la sección Contact.
+              Puedes reemplazarla por otra imagen.
+            -->
+          </figure>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
   </main>
 
+  <!-- =========================================================
+       IMAGEN FINAL DEL SITIO
+       Sirve como cierre visual de la página.
+     ========================================================= -->
   <section class="closing-image">
     <img src="assets/img/site-under-construction.jpeg" alt="Collage-style visual composition reading 'This site is currently under construction'">
+    <!--
+      Puedes cambiar esta imagen final si quieres otro cierre visual.
+    -->
   </section>
 
+  <!-- =========================================================
+       SCRIPT DE CAMBIO DE IDIOMA
+       Permite alternar entre inglés y español.
+       No conviene editarlo si no sabes JavaScript.
+     ========================================================= -->
   <script>
     const buttons = document.querySelectorAll('.lang-btn');
     const root = document.documentElement;
