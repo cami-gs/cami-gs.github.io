@@ -1,663 +1,523 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap');
-
-:root {
-  --bg: #ffffff;
-  --text: #1c1b1f;
-  --accent: #4b4fa3;
-  --accent-soft: #6a6fc2;
-  --muted: #6a6a73;
-  --line: #d8d8e2;
-  --card: #f6f6fb;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "EB Garamond", "Cormorant Garamond", Garamond, serif;
-  line-height: 1.62;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: var(--accent);
-}
-
-/* Language switch */
-.language-switch {
-  display: flex;
-  gap: 0.45rem;
-  align-items: center;
-  flex: 0 0 auto;
-}
-
-.lang-btn {
-  background: transparent;
-  border: 1px solid var(--line);
-  color: var(--accent);
-  font-family: "EB Garamond", "Cormorant Garamond", Garamond, serif;
-  font-size: 0.92rem;
-  line-height: 1;
-  padding: 0.38rem 0.62rem;
-  cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-.lang-btn:hover,
-.lang-btn:focus,
-.lang-btn.active {
-  background: var(--accent);
-  color: #ffffff;
-  border-color: var(--accent);
-}
-
-.lang {
-  display: none;
-}
-
-html[data-lang="en"] .lang-en {
-  display: inline;
-}
-
-html[data-lang="es"] .lang-es {
-  display: inline;
-}
-
-html[data-lang="en"] p.lang-en,
-html[data-lang="es"] p.lang-es,
-html[data-lang="en"] div.lang-en,
-html[data-lang="es"] div.lang-es {
-  display: block;
-}
-
-/* Hero */
-.hero {
-  padding: 4.2rem 2rem 4rem 2rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.hero-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.hero-topline {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.eyebrow {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  line-height: 1.3;
-  flex: 1 1 auto;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-  gap: 2.5rem;
-  align-items: start;
-}
-
-.hero-text {
-  padding-top: 0;
-  max-width: 44rem;
-}
-
-h1 {
-  margin: 0;
-  font-family: "Cormorant Garamond", "EB Garamond", Garamond, serif;
-  font-size: clamp(2.8rem, 6vw, 4.4rem);
-  line-height: 0.92;
-  color: var(--accent);
-  font-weight: 600;
-  max-width: 16ch;
-  text-wrap: balance;
-}
-
-.lead {
-  max-width: 42ch;
-  font-size: clamp(1.04rem, 2vw, 1.3rem);
-  line-height: 1.48;
-  margin-top: 1.1rem;
-  margin-bottom: 1.8rem;
-  text-wrap: pretty;
-}
-
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.55rem;
-  margin-top: 1.2rem;
-}
-
-.nav-separator {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Apple Symbols", "Segoe UI Symbol", "Noto Sans Symbols 2", "Arial Unicode MS", sans-serif;
-  font-size: 0.82rem;
-  line-height: 1;
-  color: var(--accent);
-  transform: translateY(-0.02em);
-}
-
-.main-nav a {
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 1rem;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.main-nav a:hover,
-.main-nav a:focus {
-  color: var(--accent-soft);
-  border-bottom: 1px solid var(--accent-soft);
-}
-
-.hero-image {
-  max-width: 430px;
-  width: 100%;
-  margin: 0 0 0 auto;
-  padding-top: 0.2rem;
-}
-
-.hero-image img {
-  filter: grayscale(100%);
-  border: 1px solid var(--line);
-}
-
-.hero-image figcaption {
-  margin-top: 0.45rem;
-  font-size: 0.82rem;
-  line-height: 1.35;
-  color: var(--muted);
-  text-align: left;
-}
-
-/* Site note */
-.site-note {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0.85rem 2rem;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.site-note p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--muted);
-  font-style: italic;
-}
-
-/* Main content */
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 3.2rem 2rem 5rem 2rem;
-}
-
-.content-section {
-  display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  gap: 1.25rem;
-  padding: 2.2rem 0;
-  border-bottom: 1px solid var(--line);
-  align-items: start;
-}
-
-.section-label {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  font-family: "Apple Symbols", "Segoe UI Symbol", "Noto Sans Symbols 2", "Arial Unicode MS", sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-  color: var(--accent);
-  padding-top: 0.45rem;
-  min-width: 28px;
-}
-
-.section-body h2 {
-  margin-top: 0;
-  margin-bottom: 0.95rem;
-  font-family: "Cormorant Garamond", "EB Garamond", Garamond, serif;
-  font-size: 2.3rem;
-  line-height: 1;
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.section-body p {
-  font-size: 1.14rem;
-  max-width: 820px;
-  margin-top: 0;
-  margin-bottom: 0.9rem;
-}
-
-/* Research interests layout */
-.interests-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
-  gap: 1.5rem;
-  align-items: start;
-}
-
-.interests-text {
-  min-width: 0;
-}
-
-.interests-image {
-  margin: 0;
-  width: 100%;
-}
-
-.interests-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Selected projects layout */
-.projects-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
-  gap: 1.5rem;
-  align-items: start;
-}
-
-.projects-text {
-  min-width: 0;
-}
-
-.projects-image {
-  margin: 0;
-  width: 100%;
-}
-
-.projects-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Projects subsection title */
-.projects-subtitle {
-  margin-top: 1.4rem;
-  margin-bottom: 0.8rem;
-  font-family: "Cormorant Garamond", "EB Garamond", Garamond, serif;
-  font-size: 1.5rem;
-  line-height: 1.1;
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.projects-subtitle a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.projects-subtitle a:hover,
-.projects-subtitle a:focus {
-  color: var(--accent-soft);
-  border-bottom: 1px solid var(--accent-soft);
-}
-
-/* Links inside project cards */
-.project-card h3 a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.project-card h3 a:hover,
-.project-card h3 a:focus {
-  color: var(--accent-soft);
-  border-bottom: 1px solid var(--accent-soft);
-}
-
-/* Contact section with image on the right */
-.contact-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
-  gap: 1.5rem;
-  align-items: start;
-}
-
-.contact-text {
-  min-width: 0;
-}
-
-.contact-image {
-  margin: 0;
-  width: 100%;
-}
-
-.contact-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Project cards */
-.project-card {
-  background: var(--card);
-  border-left: 3px solid var(--accent);
-  padding: 1rem 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.project-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.45rem;
-  font-size: 1.45rem;
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.project-card p {
-  margin-bottom: 0;
-  font-size: 1.05rem;
-}
-
-/* CV button */
-.cv-link {
-  display: inline-block;
-  margin-top: 0.4rem;
-  padding: 0.72rem 1.15rem;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.cv-link:hover,
-.cv-link:focus {
-  background: var(--accent);
-  color: #ffffff;
-}
-
-/* Contact */
-.contact-links a {
-  color: var(--accent);
-  text-decoration: none;
-  margin-right: 1rem;
-}
-
-.contact-links a:hover,
-.contact-links a:focus {
-  text-decoration: underline;
-}
-
-/* Closing image */
-.closing-image {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 2rem 4rem 2rem;
-}
-
-.closing-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-  .hero {
-    padding: 3.4rem 1.5rem 3rem 1.5rem;
-  }
-
-  .hero-topline {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-image {
-    max-width: 420px;
-    margin: 0;
-    padding-top: 0;
-  }
-
-  h1 {
-    max-width: 100%;
-    font-size: clamp(2.6rem, 8vw, 3.5rem);
-  }
-
-  .lead {
-    max-width: 46ch;
-  }
-
-  .site-note {
-    padding: 0.85rem 1.5rem;
-  }
-
-  main {
-    padding: 2.6rem 1.5rem 4rem 1.5rem;
-  }
-
-  .closing-image {
-    padding: 2.2rem 1.5rem 3.5rem 1.5rem;
-  }
-
-  .interests-layout {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .interests-image {
-    max-width: 420px;
-  }
-
-  .projects-layout {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .projects-image {
-    max-width: 420px;
-  }
-
-  .projects-subtitle {
-    font-size: 1.4rem;
-    margin-top: 1.2rem;
-  }
-
-  /* Contact responsive: text first, image below */
-  .contact-layout {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .contact-image {
-    max-width: 420px;
-  }
-
-  .content-section {
-    grid-template-columns: 20px 1fr;
-    gap: 0.9rem;
-    padding: 1.8rem 0;
-  }
-
-  .section-label {
-    font-size: 0.95rem;
-    padding-top: 0.35rem;
-    min-width: 20px;
-  }
-
-  .section-body h2 {
-    font-size: 2rem;
-  }
-
-  .section-body p {
-    font-size: 1.05rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 640px) {
-  .hero {
-    padding: 2.6rem 1.2rem 2.3rem 1.2rem;
-  }
-
-  .hero-topline {
-    gap: 0.7rem;
-  }
-
-  .lang-btn {
-    font-size: 0.86rem;
-    padding: 0.34rem 0.56rem;
-  }
-
-  .eyebrow {
-    font-size: 0.8rem;
-    letter-spacing: 0.06em;
-  }
-
-  h1 {
-    max-width: 100%;
-    font-size: clamp(2.3rem, 10vw, 3rem);
-    line-height: 0.96;
-  }
-
-  .lead {
-    max-width: 100%;
-    font-size: 1.02rem;
-    margin-top: 1rem;
-    margin-bottom: 1.4rem;
-  }
-
-  .main-nav {
-    gap: 0.5rem;
-  }
-
-  .nav-separator {
-    font-size: 0.72rem;
-  }
-
-  .main-nav a {
-    font-size: 0.95rem;
-  }
-
-  .hero-image {
-    max-width: 100%;
-  }
-
-  .hero-image figcaption {
-    font-size: 0.82rem;
-  }
-
-  .site-note {
-    padding: 0.8rem 1.2rem;
-  }
-
-  .site-note p {
-    font-size: 0.9rem;
-  }
-
-  main {
-    padding: 2rem 1.2rem 3rem 1.2rem;
-  }
-
-  .closing-image {
-    padding: 2rem 1.2rem 3rem 1.2rem;
-  }
-
-  .interests-image {
-    max-width: 100%;
-  }
-
-  .projects-image {
-    max-width: 100%;
-  }
-
-  .projects-subtitle {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 0.7rem;
-  }
-
-  /* Contact responsive: full width image below text */
-  .contact-image {
-    max-width: 100%;
-  }
-
-  .content-section {
-    grid-template-columns: 18px 1fr;
-    gap: 0.75rem;
-    padding: 1.4rem 0;
-  }
-
-  .section-label {
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
-    min-width: 18px;
-  }
-
-  .section-body h2 {
-    font-size: 1.7rem;
-    margin-bottom: 0.7rem;
-  }
-
-  .section-body p,
-  .project-card p {
-    font-size: 1rem;
-  }
-
-  .project-card {
-    padding: 0.9rem 1rem;
-  }
-
-  .project-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .cv-link {
-    width: 100%;
-    text-align: center;
-  }
-
-  .contact-links a {
-    display: inline-block;
-    margin-right: 0.7rem;
-    margin-bottom: 0.3rem;
-  }
-}
+<!DOCTYPE html>
+<!--
+  Tipo de documento HTML5.
+  No es necesario cambiar esta línea.
+-->
+
+<html lang="en" data-lang="en">
+<!--
+  lang="en" indica que el sitio carga inicialmente en inglés.
+  data-lang="en" permite que el botón de idioma muestre inglés por defecto.
+  Si quieres que el sitio abra primero en español, cambia ambos a "es".
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <!--
+    Permite que se vean bien tildes, eñes y caracteres especiales.
+    No conviene cambiar esto.
+  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    Hace que el sitio se adapte bien a celulares y tablets.
+    No conviene cambiar esto.
+  -->
+
+  <title>Camila Ignacia González Silva</title>
+  <!--
+    Este es el título que aparece en la pestaña del navegador.
+    Cámbialo por tu nombre.
+  -->
+
+  <meta name="description" content="Academic and professional portfolio of Camila Ignacia González Silva: sociology, research, projects, and CV.">
+  <!--
+    Esta es una breve descripción del sitio.
+    Puede aparecer en buscadores.
+    Cámbiala por una descripción corta de tu perfil.
+  -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--
+    Esta línea conecta el HTML con tu archivo de estilos CSS.
+    Solo cámbiala si el archivo style.css está en otra carpeta o tiene otro nombre.
+  -->
+</head>
+
+<body>
+  <!-- =========================================================
+       ENCABEZADO PRINCIPAL / HERO
+       Aquí va la presentación inicial del sitio:
+       - nombre
+       - descripción breve
+       - menú
+       - imagen principal
+     ========================================================= -->
+
+  <header class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-topline">
+        <p class="eyebrow">
+          <!--
+            Frase corta que resume el perfil.
+            Hay una versión en inglés y una en español.
+            Cambia ambos textos si adaptas esta plantilla.
+          -->
+          <span class="lang lang-en" lang="en">Sociology · Research · Methodological Learnings</span>
+          <span class="lang lang-es" lang="es">Sociología · Investigación · Aprendizajes metodológicos</span>
+        </p>
+
+        <div class="language-switch" aria-label="Language switcher">
+          <!--
+            Botones para cambiar entre inglés y español.
+            No conviene modificar la estructura.
+            Solo usa esta parte tal como está.
+          -->
+          <button class="lang-btn active" data-lang="en" type="button" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="es" type="button" aria-pressed="false">ES</button>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Camila Ignacia González Silva</h1>
+          <!--
+            Tu nombre principal.
+            Cámbialo por tu nombre completo o nombre profesional.
+          -->
+
+          <p class="lead lang lang-en" lang="en">
+            Chilean Sociologist, interested in social inequalities, materialities and everyday life, education in carceral contexts, and socially engaged knowledge production.
+          </p>
+
+          <p class="lead lang lang-es" lang="es">
+            Socióloga chilena, interesada en desigualdades sociales, materialidades y vida cotidiana, educación en contextos de encierro y producción de conocimiento con incidencia social.
+          </p>
+          <!--
+            Este es el texto breve de presentación.
+            Debes cambiar ambas versiones: inglés y español.
+          -->
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <!--
+              Menú principal del sitio.
+              Cada enlace lleva a una sección de la misma página.
+              Puedes cambiar los nombres visibles, pero es importante
+              mantener los href (#about, #interests, etc.) si las secciones
+              siguen usando esos mismos id.
+            -->
+
+            <a href="#about">
+              <span class="lang lang-en" lang="en">About</span>
+              <span class="lang lang-es" lang="es">Sobre mí</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#interests">
+              <span class="lang lang-en" lang="en">Research Interests</span>
+              <span class="lang lang-es" lang="es">Intereses de investigación</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#projects">
+              <span class="lang lang-en" lang="en">Projects</span>
+              <span class="lang lang-es" lang="es">Proyectos</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#cv">
+              <span class="lang lang-en" lang="en">CV</span>
+              <span class="lang lang-es" lang="es">CV</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#contact">
+              <span class="lang lang-en" lang="en">Contact</span>
+              <span class="lang lang-es" lang="es">Contacto</span>
+            </a>
+          </nav>
+        </div>
+
+        <figure class="hero-image">
+          <img src="assets/img/building.jpg" alt="Black and white analogue photograph of a residential building in Santiago de Chile">
+          <!--
+            Imagen principal del encabezado.
+            Para cambiarla:
+            1. Guarda tu imagen en la carpeta assets/img/
+            2. Cambia el nombre del archivo en src=
+            3. Cambia el texto alt= describiendo la imagen
+          -->
+
+          <figcaption>
+            <span class="lang lang-en" lang="en">Santiago de Chile, 2024. Analogue photograph by Camila Ignacia González Silva.</span>
+            <span class="lang lang-es" lang="es">Santiago de Chile, 2024. Fotografía análoga por Camila Ignacia González Silva.</span>
+          </figcaption>
+          <!--
+            Pie de foto de la imagen principal.
+            Cambia ambas versiones si usas otra imagen.
+          -->
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       AVISO BREVE BAJO EL ENCABEZADO
+       Sirve para mostrar un mensaje corto, por ejemplo:
+       "Sitio en construcción"
+     ========================================================= -->
+
+  <div class="site-note">
+    <p class="lang lang-en" lang="en">This site is currently under construction.</p>
+    <p class="lang lang-es" lang="es">Este sitio se encuentra actualmente en construcción.</p>
+    <!--
+      Puedes cambiar este mensaje por otro aviso breve.
+      Recuerda editar ambas versiones.
+    -->
+  </div>
+
+  <!-- =========================================================
+       CONTENIDO PRINCIPAL DEL SITIO
+     ========================================================= -->
+
+  <main>
+
+    <!-- =====================================================
+         SECCIÓN ABOUT / SOBRE MÍ
+         Aquí va una presentación más desarrollada.
+       ===================================================== -->
+    <section id="about" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+      <!--
+        Este símbolo decorativo acompaña el título de la sección.
+        No es necesario cambiarlo.
+      -->
+
+      <div class="section-body">
+        <h2>
+          <span class="lang lang-en" lang="en">About</span>
+          <span class="lang lang-es" lang="es">Sobre mí</span>
+        </h2>
+
+        <p class="lang lang-en" lang="en">
+          I am a chilean sociologist. My work is grounded in qualitative and mixed-methods research and oriented toward the production of rigorous knowledge with social impact. I currently complement my sociological training with studies in Programming and Systems Analysis in order to strengthen my research and dissemination tools.
+        </p>
+
+        <p class="lang lang-es" lang="es">
+          Soy socióloga y vivo en Chile. Mi trabajo se sitúa en la investigación cualitativa y métodos mixtos, y se orienta a la producción de conocimiento riguroso con incidencia social. Actualmente complemento mi formación en sociología con estudios en Programación y Análisis de Sistemas para fortalecer mis herramientas de investigación y difusión.
+        </p>
+        <!--
+          Texto principal de la sección Sobre mí.
+          Edita ambas versiones con tu propia presentación.
+        -->
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN RESEARCH INTERESTS / INTERESES DE INVESTIGACIÓN
+         Esta sección tiene dos columnas:
+         - texto
+         - imagen
+       ===================================================== -->
+    <section id="interests" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <div class="interests-layout">
+          <!--
+            Este contenedor organiza texto e imagen en columnas.
+            No conviene cambiar su estructura.
+          -->
+
+          <div class="interests-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Research Interests</span>
+              <span class="lang lang-es" lang="es">Intereses de investigación</span>
+            </h2>
+
+            <p class="lang lang-en" lang="en">
+              Social inequality, economic sociology, housing and everyday life, economic and financial socialization, education in contexts of confinement, interculturality, material environments and social organization, and qualitative and mixed methods.
+
+I am currently exploring visual methodologies for social research. On the one hand, I am interested in the use of R and programming for data visualization; on the other, in the use of photography as a tool for social research. In the “Notes” section, you will find some reflections on these topics.
+            </p>
+
+            <p class="lang lang-es" lang="es">
+              Desigualdad social, sociología económica, vivienda y vida cotidiana, socialización económica y financiera, educación en contextos de encierro, interculturalidad, entornos materiales y organización social, y metodologías cualitativas y mixtas. 
+              Actualmente estoy indagando en metodologías visuales para la investigación social. Por un lado, a partir del uso de R y la programación para visualizar datos y, por otro, el uso de fotografías para la investigación social. En la sección "notas" encontrarás algunos apuntes sobre este tema. 
+            </p>
+            <!--
+              Texto de intereses de investigación.
+              Edita ambas versiones.
+            -->
+          </div>
+
+          <figure class="interests-image">
+            <img src="assets/img/photovoice.png" alt="Collage-style image related to research interests in urban life, visual methods, and social observation">
+            <!--
+              Imagen de esta sección.
+              Para cambiarla:
+              - reemplaza el nombre del archivo en src=
+              - cambia el texto alt=
+            -->
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN PROJECTS / PROYECTOS
+         Se reorganizó para separar:
+         - proyectos individuales/seleccionados
+         - proyectos colectivos
+         La tarjeta de "Education in Carceral Contexts" pasa al
+         bloque de proyectos colectivos.
+       ===================================================== -->
+    <section id="projects" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <div class="projects-layout">
+          <div class="projects-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Selected Projects</span>
+              <span class="lang lang-es" lang="es">Proyectos en los que he participado</span>
+            </h2>
+
+            <!--
+              Bloque de proyectos académicos / de investigación seleccionados.
+            -->
+            <div class="project-card">
+              <h3>
+                <span class="lang lang-en" lang="en">Family Financial Socialization in Chile</span>
+                <span class="lang lang-es" lang="es">Socialización financiera familiar en Chile</span>
+              </h3>
+              <p class="lang lang-en" lang="en">
+                Research on financial socialization in moderate-income households and everyday economic practices in Chile.
+              </p>
+              <p class="lang lang-es" lang="es">
+                Investigación sobre socialización financiera, gramáticas afectivas y prácticas económicas cotidianas en hogares chilenos de ingresos moderados.
+              </p>
+            </div>
+
+            <div class="project-card">
+              <h3>
+                <span class="lang lang-en" lang="en">Interculturality, Cinema, and School Inclusion</span>
+                <span class="lang lang-es" lang="es">Interculturalidad, cine e inclusión escolar</span>
+              </h3>
+              <p class="lang lang-en" lang="en">
+                Qualitative and mixed-methods research on cinema, intercultural experiences, and social inclusion in public schools.
+              </p>
+              <p class="lang lang-es" lang="es">
+                Investigación cualitativa y con métodos mixtos sobre cine, experiencias interculturales e inclusión social en escuelas públicas.
+              </p>
+            </div>
+
+            <!--
+              Subtítulo del bloque de proyectos colectivos.
+              Este título es clickeable y lleva a la página específica.
+            -->
+            <h3 class="projects-subtitle">
+              <a href="collective_projects.html">
+                <span class="lang lang-en" lang="en">Collective Projects</span>
+                <span class="lang lang-es" lang="es">Proyectos colectivos</span>
+              </a>
+            </h3>
+
+            <!--
+              Recurso colectivo 1.
+            -->
+            <div class="project-card">
+              <h3>
+                <a href="collective_projects.html">
+                  <span class="lang lang-en" lang="en">Collective Mapping Bulletin with Colectiva Jengibre</span>
+                  <span class="lang lang-es" lang="es">Boletín de mapeo colectivo con Colectiva Jengibre</span>
+                </a>
+              </h3>
+
+              <p class="lang lang-en" lang="en">
+                A 2019 participatory bulletin developed with Colectiva Jengibre in Puente Alto, documenting the planning of a collective mapping process focused on territory, identity, inequality, and community organization.
+              </p>
+
+              <p class="lang lang-es" lang="es">
+                Boletín participativo elaborado en 2019 junto a Colectiva Jengibre en Puente Alto, que documenta la planificación de un proceso de mapeo colectivo centrado en territorio, identidad, desigualdad y organización comunitaria.
+              </p>
+
+              <p>
+                <a class="cv-link" href="assets/pdf/mapeo-colectivo-jengibre-2019.pdf" target="_blank" rel="noopener noreferrer">
+                  <span class="lang lang-en" lang="en">Open bulletin (PDF)</span>
+                  <span class="lang lang-es" lang="es">Abrir boletín (PDF)</span>
+                </a>
+              </p>
+              <!--
+                Enlace directo al PDF del boletín.
+                Más adelante puedes quitarlo de esta sección y dejar
+                solo el acceso desde collective_projects.html si prefieres.
+              -->
+            </div>
+
+            <!--
+              Recurso colectivo 2.
+              Por ahora no incluye PDF, pero queda ya ubicado dentro
+              del bloque correcto para que después agregues materiales.
+            -->
+            <div class="project-card">
+              <h3>
+                <a href="collective_projects.html">
+                  <span class="lang lang-en" lang="en">Education in Carceral Contexts</span>
+                  <span class="lang lang-es" lang="es">Educación en contextos de encierro</span>
+                </a>
+              </h3>
+              <p class="lang lang-en" lang="en">
+                Collective and socio-educational work focused on education in prison contexts from a gender perspective.
+              </p>
+              <p class="lang lang-es" lang="es">
+                Trabajo colectivo y socioeducativo centrado en la educación en contextos de encierro desde una perspectiva de género.
+              </p>
+            </div>
+          </div>
+
+          <figure class="projects-image">
+            <img src="assets/img/fondo_pagina.png" alt="Collage-style visual composition with hands, brackets, punctuation marks, and visual research motifs">
+            <!--
+              Imagen lateral de la sección Projects.
+              Puedes cambiar archivo y descripción.
+            -->
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN CV
+         Aquí se muestra un enlace para descargar el CV en PDF.
+       ===================================================== -->
+    <section id="cv" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <h2>
+          <span class="lang lang-en" lang="en">Curriculum Vitae</span>
+          <span class="lang lang-es" lang="es">Currículum Vitae</span>
+        </h2>
+
+        <p class="lang lang-en" lang="en">
+          The current academic CV is available in PDF format.
+        </p>
+        <p class="lang lang-es" lang="es">
+          El CV académico actualizado está disponible en formato PDF.
+        </p>
+
+        <p>
+          <a class="cv-link" href="assets/pdf/Camila_Gonzalez_Silva_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="lang lang-en" lang="en">Download academic CV (PDF)</span>
+            <span class="lang lang-es" lang="es">Descargar CV académico (PDF)</span>
+          </a>
+        </p>
+        <!--
+          Para cambiar el CV:
+          - guarda tu PDF en assets/pdf/
+          - cambia el nombre del archivo en href=
+          - puedes también cambiar el texto del botón
+        -->
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN CONTACT / CONTACTO
+         Tiene dos columnas:
+         - texto
+         - imagen
+         En pantallas pequeñas, el CSS hará que la imagen pase abajo.
+       ===================================================== -->
+    <section id="contact" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <div class="contact-layout">
+          <div class="contact-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Contact</span>
+              <span class="lang lang-es" lang="es">Contacto</span>
+            </h2>
+
+            <p>
+              <span class="lang lang-en" lang="en">Email:</span>
+              <span class="lang lang-es" lang="es">Correo:</span>
+              <a href="mailto:camila.gonzalez.3@ug.uchile.cl">camila.gonzalez.3@ug.uchile.cl</a>
+            </p>
+
+            <p class="contact-links">
+              <a href="https://github.com/cami-gs" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/cami-gs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://orcid.org/0009-0001-7562-7321" target="_blank" rel="noopener noreferrer">ORCID</a>
+            </p>
+            <!--
+              Aquí van tus datos de contacto.
+              Puedes cambiar:
+              - el correo
+              - GitHub
+              - LinkedIn
+              - ORCID
+              - agregar o quitar enlaces
+            -->
+          </div>
+
+          <figure class="contact-image">
+            <img src="assets/img/web-1.png" alt="Urban visual composition of Santiago de Chile in blue, green, and violet tones">
+            <!--
+              Imagen de la sección Contact.
+              Puedes reemplazarla por otra imagen.
+            -->
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       IMAGEN FINAL DEL SITIO
+       Sirve como cierre visual de la página.
+     ========================================================= -->
+  <section class="closing-image">
+    <img src="assets/img/site-under-construction.jpeg" alt="Collage-style visual composition reading 'This site is currently under construction'">
+    <!--
+      Puedes cambiar esta imagen final si quieres otro cierre visual.
+    -->
+  </section>
+
+  <!-- =========================================================
+       SCRIPT DE CAMBIO DE IDIOMA
+       Permite alternar entre inglés y español.
+       No conviene editarlo si no sabes JavaScript.
+     ========================================================= -->
+  <script>
+    const buttons = document.querySelectorAll('.lang-btn');
+    const root = document.documentElement;
+
+    function setLanguage(lang) {
+      root.setAttribute('data-lang', lang);
+      localStorage.setItem('site-language', lang);
+
+      buttons.forEach(btn => {
+        const isActive = btn.dataset.lang === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+    }
+
+    const savedLanguage = localStorage.getItem('site-language') || 'en';
+    setLanguage(savedLanguage);
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.dataset.lang);
+      });
+    });
+  </script>
+</body>
+</html>
