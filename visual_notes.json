@@ -15,6 +15,18 @@
   },
   "groups": [
     {
+      "group_en": "Humberstone",
+      "group_es": "Humberstone",
+      "items": [
+        {
+          "file": "humberstone-1.jpg",
+          "alt_en": "Street view in Humberstone with houses, utility poles, and desert sky",
+          "caption_en": "Humberstone, 2022. Digital photograph.",
+          "caption_es": "Humberstone, 2022. Fotografía digital."
+        }
+      ]
+    },
+    {
       "group_en": "La Pintana",
       "group_es": "La Pintana",
       "group_comment": "Subsección visible por lugar. Puedes cambiar solo el título si quieres otro criterio curatorial.",
@@ -54,7 +66,7 @@
     {
       "group_en": "Puente Alto",
       "group_es": "Puente Alto",
-      "group_comment": "Actualmente está todo junto en un mismo grupo. Si después quieres separarlo en 'terrain' y 'built environment', basta con dividirlo en dos grupos.",
+      "group_comment": "Actualmente está todo junto en un mismo grupo.",
       "items": [
         {
           "file": "buildings-puentealto.jpg",
