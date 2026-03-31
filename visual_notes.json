@@ -199,6 +199,12 @@
   "alt_en": "Historic canal view of Nikolaifleet in Hamburg with brick buildings, waterway, and pedestrian edge",
   "caption_en": "Hamburg, 2023. View of Nikolaifleet, one of the city’s most emblematic historic canals, lined with brick buildings, waterside façades, and a pedestrian edge. In contrast to Humberstone, where the built environment survives as the exposed trace of an extractive world now absent, this image shows a historic urban landscape still fully integrated into the present city and everyday circulation. As a sociological image, it suggests that territorial and architectural inequality is also expressed in the unequal fate of built histories: while some pasts persist as ruin or residual infrastructure, others are preserved, inhabited, and converted into enduring urban value. Analogue photograph.",
   "caption_es": "Hamburgo, 2023. Vista del canal Nikolaifleet, una de las escenas históricas más emblemáticas de la ciudad, bordeada por edificios de ladrillo, fachadas junto al agua y un borde peatonal. En contraste con Humberstone, donde el entorno construido sobrevive como huella expuesta de un mundo extractivo ya ausente, esta imagen muestra un paisaje histórico todavía plenamente integrado a la ciudad presente y a la circulación cotidiana. Como imagen sociológica, sugiere que la desigualdad territorial y arquitectónica también se expresa en el destino desigual de las historias construidas: mientras algunos pasados persisten como ruina o infraestructura residual, otros son preservados, habitados y convertidos en valor urbano duradero. Fotografía análoga."
+},
+         {
+  "file": "buildings-prague-analogue.jpg",
+  "alt_en": "View of Niederbaumbrücke in Hamburg with the Elbphilharmonie concert hall in the background",
+  "caption_en": "Hamburg, 2023. View of Niederbaumbrücke with the Elbphilharmonie in the background. The image shows a historically layered urban scene in which bridge infrastructure, waterfront circulation, and a prominent cultural building are brought into the same frame. As a sociological and ethnographic image, it suggests how everyday urban space in Hamburg is shaped through the coexistence of older transport structures and newer forms of architectural prestige, making visible the selective continuity, renewal, and valorization of the built environment. Analogue photograph.",
+  "caption_es": "Hamburgo, 2023. Vista del puente Niederbaumbrücke con la Elbphilharmonie al fondo. La imagen muestra una escena urbana históricamente estratificada, en la que infraestructura de puente, circulación ribereña y un edificio cultural de alta visibilidad quedan reunidos en un mismo encuadre. Como imagen sociológica y etnográfica, sugiere cómo el espacio urbano cotidiano en Hamburgo se configura mediante la coexistencia entre estructuras de transporte más antiguas y formas más recientes de prestigio arquitectónico, haciendo visible la continuidad selectiva, la renovación y la valorización del entorno construido. Fotografía análoga."
 }
       ]
     },
@@ -208,9 +214,9 @@
       "items": [
         {
           "file": "transport-berlin-digital.jpg",
-          "alt_en": "Urban transport scene in Berlin",
-          "caption_en": "Berlin, 2023. Digital photograph.",
-          "caption_es": "Berlín, 2023. Fotografía digital."
+          "alt_en": "Covered train platform in Berlin with railway tracks, tactile paving, graffiti-covered barriers, office buildings, and a train approaching in the distance",
+  "caption_en": "Berlin, 2023. Covered train platform with railway tracks, tactile paving, graffiti-covered barriers, office buildings, and a train approaching in the distance. The image shows a routine scene of metropolitan mobility, where circulation, waiting, and access are organized through a highly structured transport environment. At the same time, the graffiti on the opposite side introduces a visible layer of informal intervention within an otherwise orderly infrastructure. Digital photograph.",
+  "caption_es": "Berlín, 2023. Andén ferroviario techado con vías, pavimento podotáctil, barreras cubiertas de grafiti, edificios de oficinas y un tren aproximándose al fondo. La imagen muestra una escena rutinaria de movilidad metropolitana, donde la circulación, la espera y el acceso se organizan a través de un entorno de transporte altamente estructurado. Al mismo tiempo, el grafiti del lado opuesto introduce una capa visible de intervención informal dentro de una infraestructura por lo demás ordenada. Fotografía digital."
         },
        {
   "file": "buildings-bundestag.jpg",
@@ -227,12 +233,6 @@
         {
           "file": "builldings-prague-analogue1.jpg",
           "alt_en": "Analogue photograph of buildings in Prague",
-          "caption_en": "Prague, 2023. Analogue photograph.",
-          "caption_es": "Praga, 2023. Fotografía análoga."
-        },
-        {
-          "file": "buildings-prague-analogue.jpg",
-          "alt_en": "Analogue photograph of Prague architecture",
           "caption_en": "Prague, 2023. Analogue photograph.",
           "caption_es": "Praga, 2023. Fotografía análoga."
         },
