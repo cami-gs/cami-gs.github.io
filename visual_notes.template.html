@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!--
   Plantilla base para generar visual_notes.html automáticamente.
-  
+
   CÓMO FUNCIONA:
   1. Este archivo define la estructura general de la página.
   2. El script generate_visual_notes.py lee visual_notes.json.
-  3. Luego reemplaza el marcador {{AUTO_GENERATED_VISUAL_ARCHIVE}} con las subsecciones y tarjetas.
+  3. Luego inserta automáticamente el bloque del archivo visual en la zona designada.
   4. El resultado final se guarda como visual_notes.html.
-  
+
   IMPORTANTE:
-  - No cambies el marcador {{AUTO_GENERATED_VISUAL_ARCHIVE}}.
+  - No borres la zona designada para inserción automática dentro de la sección "Visual archive".
   - Sí puedes editar textos fijos como el título, introducción o navegación.
 -->
 
@@ -114,13 +114,8 @@
           <span class="lang lang-es" lang="es">Archivo visual</span>
         </h2>
 
-        <!--
-          AQUÍ EL SCRIPT INSERTA AUTOMÁTICAMENTE:
-          - Los grupos por lugar
-          - Las tarjetas con cada imagen
-          - Los captions y alt text
-        -->
-        {{AUTO_GENERATED_VISUAL_ARCHIVE}}
+        <!-- El script inserta automáticamente aquí los grupos y tarjetas del archivo visual. -->
+        <!-- VISUAL_NOTES_AUTO_CONTENT -->
       </div>
     </section>
 
