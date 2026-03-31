@@ -1,0 +1,248 @@
+{
+  "comments": {
+    "purpose": "Este archivo contiene los metadatos de cada grupo y cada imagen para generar visual_notes.html automáticamente.",
+    "how_to_use": [
+      "Cada objeto dentro de 'groups' corresponde a una subsección visible por lugar.",
+      "Dentro de cada grupo, 'items' contiene las imágenes que aparecerán en la grilla.",
+      "'file' debe coincidir exactamente con el nombre del archivo en assets/img/photos_web/full y assets/img/photos_web/thumbs.",
+      "Puedes editar captions, alt text, años o técnica sin tocar el HTML.",
+      "El orden en este JSON es el orden final en la página."
+    ]
+  },
+  "paths": {
+    "full_base": "assets/img/photos_web/full",
+    "thumbs_base": "assets/img/photos_web/thumbs"
+  },
+  "groups": [
+    {
+      "group_en": "La Pintana",
+      "group_es": "La Pintana",
+      "group_comment": "Subsección visible por lugar. Puedes cambiar solo el título si quieres otro criterio curatorial.",
+      "items": [
+        {
+          "file": "entrevistas la pintana_20220203_0001.jpg",
+          "alt_en": "Interior of a wooden structure in La Pintana, with table, chair, and window light",
+          "caption_en": "La Pintana, 2022. Analogue photograph.",
+          "caption_es": "La Pintana, 2022. Fotografía análoga."
+        },
+        {
+          "file": "entrevistas la pintana_20220203_0002.jpg",
+          "alt_en": "Interior scene in La Pintana with wooden beams, bicycle, and round table",
+          "caption_en": "La Pintana, 2022. Analogue photograph.",
+          "caption_es": "La Pintana, 2022. Fotografía análoga."
+        },
+        {
+          "file": "entrevistas la pintana_20220203_0003.jpg",
+          "alt_en": "Indoor scene in La Pintana with people, wooden structure, and low light",
+          "caption_en": "La Pintana, 2022. Analogue photograph.",
+          "caption_es": "La Pintana, 2022. Fotografía análoga."
+        },
+        {
+          "file": "entrevistas la pintana_20220203_0004.jpg",
+          "alt_en": "Wooden interior in La Pintana with table, chairs, and warm light",
+          "caption_en": "La Pintana, 2022. Analogue photograph.",
+          "caption_es": "La Pintana, 2022. Fotografía análoga."
+        },
+        {
+          "file": "entrevistas la pintana_20220203_0005.jpg",
+          "alt_en": "Dark interior corner in La Pintana with chair, table, and window",
+          "caption_en": "La Pintana, 2022. Analogue photograph.",
+          "caption_es": "La Pintana, 2022. Fotografía análoga."
+        }
+      ]
+    },
+    {
+      "group_en": "Puente Alto",
+      "group_es": "Puente Alto",
+      "group_comment": "Actualmente está todo junto en un mismo grupo. Si después quieres separarlo en 'terrain' y 'built environment', basta con dividirlo en dos grupos.",
+      "items": [
+        {
+          "file": "buildings-puentealto.jpg",
+          "alt_en": "Buildings in Puente Alto, Santiago de Chile",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto1.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto2.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto3.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto5.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto6.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto7.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto8.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto9.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto.10.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto.11.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto.12.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        },
+        {
+          "file": "terreno-puentealto.13.jpg",
+          "alt_en": "Analogue photograph of a terrain scene in Puente Alto",
+          "caption_en": "Puente Alto, 2021. Analogue photograph.",
+          "caption_es": "Puente Alto, 2021. Fotografía análoga."
+        }
+      ]
+    },
+    {
+      "group_en": "Ñuñoa",
+      "group_es": "Ñuñoa",
+      "items": [
+        {
+          "file": "depa-nunoa:santiago.jpg",
+          "alt_en": "Analogue photograph of an apartment interior in Ñuñoa, Santiago",
+          "caption_en": "Ñuñoa, 2021. Analogue photograph.",
+          "caption_es": "Ñuñoa, 2021. Fotografía análoga."
+        },
+        {
+          "file": "depa-nunoa:santiago1.jpg",
+          "alt_en": "Analogue photograph of an apartment interior in Ñuñoa, Santiago",
+          "caption_en": "Ñuñoa, 2021. Analogue photograph.",
+          "caption_es": "Ñuñoa, 2021. Fotografía análoga."
+        },
+        {
+          "file": "cocina-nunoa.jpg",
+          "alt_en": "Analogue photograph of a kitchen interior in Ñuñoa",
+          "caption_en": "Ñuñoa, 2021. Analogue photograph.",
+          "caption_es": "Ñuñoa, 2021. Fotografía análoga."
+        }
+      ]
+    },
+    {
+      "group_en": "Santiago de Chile",
+      "group_es": "Santiago de Chile",
+      "items": [
+        {
+          "file": "graffiti-santiago.jpg",
+          "alt_en": "Graffiti and urban wall surfaces in Santiago de Chile",
+          "caption_en": "Santiago de Chile, 2019. Digital photograph.",
+          "caption_es": "Santiago de Chile, 2019. Fotografía digital."
+        },
+        {
+          "file": "demonstration-santiago-2019.jpg",
+          "alt_en": "Street demonstration in Santiago de Chile in 2019",
+          "caption_en": "Santiago de Chile, 2019. Digital photograph.",
+          "caption_es": "Santiago de Chile, 2019. Fotografía digital."
+        }
+      ]
+    },
+    {
+      "group_en": "Hamburg",
+      "group_es": "Hamburgo",
+      "items": [
+        {
+          "file": "buildings-hamburg-analogue.jpg",
+          "alt_en": "Analogue photograph of buildings in Hamburg",
+          "caption_en": "Hamburg, 2023. Analogue photograph.",
+          "caption_es": "Hamburgo, 2023. Fotografía análoga."
+        }
+      ]
+    },
+    {
+      "group_en": "Berlin",
+      "group_es": "Berlín",
+      "items": [
+        {
+          "file": "transport-berlin-digital.jpg",
+          "alt_en": "Urban transport scene in Berlin",
+          "caption_en": "Berlin, 2023. Digital photograph.",
+          "caption_es": "Berlín, 2023. Fotografía digital."
+        },
+        {
+          "file": "buildings-bundestag.jpg",
+          "alt_en": "Architectural view near the Bundestag in Berlin",
+          "caption_en": "Berlin, 2023. Digital photograph.",
+          "caption_es": "Berlín, 2023. Fotografía digital."
+        }
+      ]
+    },
+    {
+      "group_en": "Prague",
+      "group_es": "Praga",
+      "items": [
+        {
+          "file": "builldings-prague-analogue1.jpg",
+          "alt_en": "Analogue photograph of buildings in Prague",
+          "caption_en": "Prague, 2023. Analogue photograph.",
+          "caption_es": "Praga, 2023. Fotografía análoga."
+        },
+        {
+          "file": "buildings-prague-analogue.jpg",
+          "alt_en": "Analogue photograph of Prague architecture",
+          "caption_en": "Prague, 2023. Analogue photograph.",
+          "caption_es": "Praga, 2023. Fotografía análoga."
+        },
+        {
+          "file": "builfings-prague-analogue2.jpg",
+          "alt_en": "Second analogue photograph of buildings in Prague",
+          "caption_en": "Prague, 2023. Analogue photograph.",
+          "caption_es": "Praga, 2023. Fotografía análoga."
+        },
+        {
+          "file": "buildings-prague-digital.jpg",
+          "alt_en": "Digital photograph of buildings in Prague",
+          "caption_en": "Prague, 2023. Digital photograph.",
+          "caption_es": "Praga, 2023. Fotografía digital."
+        },
+        {
+          "file": "buildings-prague.jpg",
+          "alt_en": "Urban buildings in Prague",
+          "caption_en": "Prague, 2023. Digital photograph.",
+          "caption_es": "Praga, 2023. Fotografía digital."
+        }
+      ]
+    }
+  ]
+}
