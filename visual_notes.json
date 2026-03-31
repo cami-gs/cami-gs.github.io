@@ -195,11 +195,11 @@
       "group_es": "Hamburgo",
       "items": [
         {
-          "file": "buildings-hamburg-analogue.jpg",
-          "alt_en": "Analogue photograph of buildings in Hamburg",
-          "caption_en": "Hamburg, 2023. Analogue photograph.",
-          "caption_es": "Hamburgo, 2023. Fotografía análoga."
-        }
+  "file": "buildings-hamburg-analogue.jpg",
+  "alt_en": "Historic canal view of Nikolaifleet in Hamburg with brick buildings, waterway, and pedestrian edge",
+  "caption_en": "Hamburg, 2023. View of Nikolaifleet, one of the city’s most emblematic historic canals, lined with brick buildings, waterside façades, and a pedestrian edge. In contrast to Humberstone, where the built environment survives as the exposed trace of an extractive world now absent, this image shows a historic urban landscape still fully integrated into the present city and everyday circulation. As a sociological image, it suggests that territorial and architectural inequality is also expressed in the unequal fate of built histories: while some pasts persist as ruin or residual infrastructure, others are preserved, inhabited, and converted into enduring urban value. Analogue photograph.",
+  "caption_es": "Hamburgo, 2023. Vista del canal Nikolaifleet, una de las escenas históricas más emblemáticas de la ciudad, bordeada por edificios de ladrillo, fachadas junto al agua y un borde peatonal. En contraste con Humberstone, donde el entorno construido sobrevive como huella expuesta de un mundo extractivo ya ausente, esta imagen muestra un paisaje histórico todavía plenamente integrado a la ciudad presente y a la circulación cotidiana. Como imagen sociológica, sugiere que la desigualdad territorial y arquitectónica también se expresa en el destino desigual de las historias construidas: mientras algunos pasados persisten como ruina o infraestructura residual, otros son preservados, habitados y convertidos en valor urbano duradero. Fotografía análoga."
+}
       ]
     },
     {
@@ -212,12 +212,12 @@
           "caption_en": "Berlin, 2023. Digital photograph.",
           "caption_es": "Berlín, 2023. Fotografía digital."
         },
-        {
-          "file": "buildings-bundestag.jpg",
-          "alt_en": "Architectural view near the Bundestag in Berlin",
-          "caption_en": "Berlin, 2023. Digital photograph.",
-          "caption_es": "Berlín, 2023. Fotografía digital."
-        }
+       {
+  "file": "buildings-bundestag.jpg",
+  "alt_en": "View of the Reichstag building in Berlin, seat of the German Bundestag, with its historic façade, glass dome, and open civic forecourt",
+  "caption_en": "Berlin, 2023. View of the Reichstag building, seat of the German Bundestag, showing its historic stone façade, glass dome, and open civic forecourt. Unlike the spaces elsewhere in this archive where architecture is tied to the exposure of everyday life, the labor of sustaining it, or the ruins of displaced social worlds, this image foregrounds a built environment where architecture concentrates and displays statehood, history, investment, and political legitimacy. As a sociological image, it suggests that territorial and architectural inequality is also expressed in the unequal distribution of monumental presence, symbolic authority, and material permanence across space. Digital photograph.",
+  "caption_es": "Berlín, 2023. Vista del edificio del Reichstag, sede del Bundestag alemán, con su fachada histórica de piedra, su cúpula de vidrio y su explanada cívica abierta. A diferencia de los espacios presentes en otras partes de este archivo, donde la arquitectura aparece ligada a la exposición de la vida cotidiana, al trabajo de sostenerla o a la ruina de mundos sociales desplazados, esta imagen pone en primer plano un entorno construido donde la arquitectura concentra y exhibe Estado, historia, inversión y legitimidad política. Como imagen sociológica, sugiere que la desigualdad territorial y arquitectónica también se expresa en la distribución desigual de monumentalidad, autoridad simbólica y permanencia material en el espacio. Fotografía digital."
+}
       ]
     },
     {
