@@ -1,79 +1,37 @@
 <!DOCTYPE html>
 <!--
-  Tipo de documento HTML5.
-  No es necesario cambiar esta línea.
+  Plantilla base para generar visual_notes.html automáticamente.
+
+  CÓMO FUNCIONA:
+  1. Este archivo define la estructura general de la página.
+  2. El script generate_visual_notes.py lee visual_notes.json.
+  3. Luego inserta automáticamente el bloque del archivo visual en la zona designada.
+  4. El resultado final se guarda como visual_notes.html.
+
+  IMPORTANTE:
+  - No borres la zona designada para inserción automática dentro de la sección "Visual archive".
+  - Sí puedes editar textos fijos como el título, introducción o navegación.
 -->
 
 <html lang="en" data-lang="en">
-<!--
-  lang="en" indica que el sitio carga inicialmente en inglés.
-  data-lang="en" permite que el botón de idioma muestre inglés por defecto.
-  Si quieres que el sitio abra primero en español, cambia ambos a "es".
--->
-
 <head>
   <meta charset="UTF-8">
-  <!--
-    Permite que se vean bien tildes, eñes y caracteres especiales.
-    No conviene cambiar esto.
-  -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--
-    Hace que el sitio se adapte bien a celulares y tablets.
-    No conviene cambiar esto.
-  -->
-
-  <title>Camila Ignacia González Silva</title>
-  <!--
-    Este es el título que aparece en la pestaña del navegador.
-    Cámbialo por tu nombre.
-  -->
-
-  <meta name="description" content="Academic and professional portfolio of Camila Ignacia González Silva: sociology, research, projects, visual notes, and CV.">
-  <!--
-    Esta es una breve descripción del sitio.
-    Puede aparecer en buscadores.
-    Cámbiala por una descripción corta de tu perfil.
-  -->
-
+  <title>Visual Notes | Camila Ignacia González Silva</title>
+  <meta name="description" content="Visual notes, photographs, and visual interventions by Camila Ignacia González Silva.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <!--
-    Esta línea conecta el HTML con tu archivo de estilos CSS.
-    Solo cámbiala si el archivo style.css está en otra carpeta o tiene otro nombre.
-  -->
 </head>
 
 <body>
-  <!-- =========================================================
-       ENCABEZADO PRINCIPAL / HERO
-       Aquí va la presentación inicial del sitio:
-       - nombre
-       - descripción breve
-       - menú
-       - imagen principal
-     ========================================================= -->
-
   <header class="hero">
     <div class="hero-inner">
-
       <div class="hero-topline">
         <p class="eyebrow">
-          <!--
-            Frase corta que resume el perfil.
-            Hay una versión en inglés y una en español.
-            Cambia ambos textos si adaptas esta plantilla.
-          -->
-          <span class="lang lang-en" lang="en">Sociology · Research · Methodological Learnings</span>
-          <span class="lang lang-es" lang="es">Sociología · Investigación · Aprendizajes metodológicos</span>
+          <span class="lang lang-en" lang="en">Observation · Territory · Visual Methodologies</span>
+          <span class="lang lang-es" lang="es">Observación · Territorio · Metodologías visuales</span>
         </p>
 
         <div class="language-switch" aria-label="Language switcher">
-          <!--
-            Botones para cambiar entre inglés y español.
-            No conviene modificar la estructura.
-            Solo usa esta parte tal como está.
-          -->
           <button class="lang-btn active" data-lang="en" type="button" aria-pressed="true">EN</button>
           <button class="lang-btn" data-lang="es" type="button" aria-pressed="false">ES</button>
         </div>
@@ -81,497 +39,109 @@
 
       <div class="hero-grid">
         <div class="hero-text">
-          <h1>Camila Ignacia González Silva</h1>
-          <!--
-            Tu nombre principal.
-            Cámbialo por tu nombre completo o nombre profesional.
-          -->
+          <p>
+            <a href="index.html">
+              <span class="lang lang-en" lang="en">← Back to homepage</span>
+              <span class="lang lang-es" lang="es">← Volver a la página principal</span>
+            </a>
+          </p>
+
+          <h1>
+            <span class="lang lang-en" lang="en">Visual Notes</span>
+            <span class="lang lang-es" lang="es">Notas visuales</span>
+          </h1>
 
           <p class="lead lang lang-en" lang="en">
-            Chilean Sociologist, interested in social inequalities, materialities and everyday life, education in carceral contexts, and socially engaged knowledge production.
+            A selection of photographs and visual interventions developed as part of my interest in observation, territory, and visual methodologies.
           </p>
 
           <p class="lead lang lang-es" lang="es">
-            Socióloga chilena, interesada en desigualdades sociales, materialidades y vida cotidiana, educación en contextos de encierro y producción de conocimiento con incidencia social.
+            Una selección de fotografías e intervenciones visuales desarrolladas como parte de mi interés por la observación, el territorio y las metodologías visuales.
           </p>
-          <!--
-            Este es el texto breve de presentación.
-            Debes cambiar ambas versiones: inglés y español.
-          -->
-
-          <nav class="main-nav" aria-label="Main navigation">
-            <!--
-              Menú principal del sitio.
-              Cada enlace lleva a una sección de la misma página
-              o a una subpágina del sitio.
-            -->
-
-            <a href="#about">
-              <span class="lang lang-en" lang="en">About</span>
-              <span class="lang lang-es" lang="es">Sobre mí</span>
-            </a>
-
-            <span class="nav-separator" aria-hidden="true">✴︎</span>
-
-            <a href="#interests">
-              <span class="lang lang-en" lang="en">Research Interests</span>
-              <span class="lang lang-es" lang="es">Intereses de investigación</span>
-            </a>
-
-            <span class="nav-separator" aria-hidden="true">✴︎</span>
-
-            <a href="#projects">
-              <span class="lang lang-en" lang="en">Projects</span>
-              <span class="lang lang-es" lang="es">Proyectos</span>
-            </a>
-
-            <span class="nav-separator" aria-hidden="true">✴︎</span>
-
-            <a href="visual_notes.html">
-              <span class="lang lang-en" lang="en">Visual Notes</span>
-              <span class="lang lang-es" lang="es">Notas visuales</span>
-            </a>
-
-            <span class="nav-separator" aria-hidden="true">✴︎</span>
-
-            <a href="#cv">
-              <span class="lang lang-en" lang="en">CV</span>
-              <span class="lang lang-es" lang="es">CV</span>
-            </a>
-
-            <span class="nav-separator" aria-hidden="true">✴︎</span>
-
-            <a href="#contact">
-              <span class="lang lang-en" lang="en">Contact</span>
-              <span class="lang lang-es" lang="es">Contacto</span>
-            </a>
-          </nav>
         </div>
 
-        <figure class="hero-image">
-          <img src="assets/img/building.jpg" alt="Black and white analogue photograph of a residential building in Santiago de Chile">
-          <!--
-            Imagen principal del encabezado.
-            Para cambiarla:
-            1. Guarda tu imagen en la carpeta assets/img/
-            2. Cambia el nombre del archivo en src=
-            3. Cambia el texto alt= describiendo la imagen
-          -->
-
+        <figure class="hero-image hero-image-color">
+          <img src="assets/img/photovoice.png" alt="Collage-style image related to visual methods, territory, and urban observation">
           <figcaption>
-            <span class="lang lang-en" lang="en">Santiago de Chile, 2024. Analogue photograph by Camila Ignacia González Silva.</span>
-            <span class="lang lang-es" lang="es">Santiago de Chile, 2024. Fotografía análoga por Camila Ignacia González Silva.</span>
+            <span class="lang lang-en" lang="en">Visual exploration, urban observation, and methodological experimentation.</span>
+            <span class="lang lang-es" lang="es">Exploración visual, observación urbana y experimentación metodológica.</span>
           </figcaption>
-          <!--
-            Pie de foto de la imagen principal.
-            Cambia ambas versiones si usas otra imagen.
-          -->
         </figure>
       </div>
     </div>
   </header>
 
-  <!-- =========================================================
-       AVISO BREVE BAJO EL ENCABEZADO
-       Sirve para mostrar un mensaje corto, por ejemplo:
-       "Sitio en construcción"
-     ========================================================= -->
-
   <div class="site-note">
-    <p class="lang lang-en" lang="en">This site is currently under construction.</p>
-    <p class="lang lang-es" lang="es">Este sitio se encuentra actualmente en construcción.</p>
-    <!--
-      Puedes cambiar este mensaje por otro aviso breve.
-      Recuerda editar ambas versiones.
-    -->
+    <p class="lang lang-en" lang="en">This section brings together photographs and visual notes in an open and growing archive.</p>
+    <p class="lang lang-es" lang="es">Esta sección reúne fotografías y notas visuales en un archivo abierto y en crecimiento.</p>
   </div>
 
-  <!-- =========================================================
-       CONTENIDO PRINCIPAL DEL SITIO
-     ========================================================= -->
-
   <main>
-
-    <!-- =====================================================
-         SECCIÓN ABOUT / SOBRE MÍ
-         Aquí va una presentación más desarrollada.
-       ===================================================== -->
-    <section id="about" class="content-section">
-      <div class="section-label" aria-hidden="true">✴︎</div>
-      <!--
-        Este símbolo decorativo acompaña el título de la sección.
-        No es necesario cambiarlo.
-      -->
-
-      <div class="section-body">
-        <h2>
-          <span class="lang lang-en" lang="en">About</span>
-          <span class="lang lang-es" lang="es">Sobre mí</span>
-        </h2>
-
-        <p class="lang lang-en" lang="en">
-          I am a Chilean sociologist. My work is grounded in qualitative and mixed-methods research and oriented toward the production of rigorous knowledge with social impact. I currently complement my sociological training with studies in Programming and Systems Analysis in order to strengthen my research and dissemination tools.
-        </p>
-
-        <p class="lang lang-es" lang="es">
-          Soy socióloga y vivo en Chile. Mi trabajo se sitúa en la investigación cualitativa y métodos mixtos, y se orienta a la producción de conocimiento riguroso con incidencia social. Actualmente complemento mi formación en sociología con estudios en Programación y Análisis de Sistemas para fortalecer mis herramientas de investigación y difusión.
-        </p>
-        <!--
-          Texto principal de la sección Sobre mí.
-          Edita ambas versiones con tu propia presentación.
-        -->
-      </div>
-    </section>
-
-    <!-- =====================================================
-         SECCIÓN RESEARCH INTERESTS / INTERESES DE INVESTIGACIÓN
-         Esta sección tiene dos columnas:
-         - texto
-         - imagen
-       ===================================================== -->
-    <section id="interests" class="content-section">
-      <div class="section-label" aria-hidden="true">✴︎</div>
-
-      <div class="section-body">
-        <div class="interests-layout">
-          <!--
-            Este contenedor organiza texto e imagen en columnas.
-            No conviene cambiar su estructura.
-          -->
-
-          <div class="interests-text">
-            <h2>
-              <span class="lang lang-en" lang="en">Research Interests</span>
-              <span class="lang lang-es" lang="es">Intereses de investigación</span>
-            </h2>
-
-            <p class="lang lang-en" lang="en">
-              Social inequality, economic sociology, housing and everyday life, economic and financial socialization, education in contexts of confinement, interculturality, material environments and social organization, and qualitative and mixed methods.
-            </p>
-
-            <p class="lang lang-en" lang="en">
-              I am currently exploring visual methodologies for social research. On the one hand, I am interested in the use of R and programming for data visualization; on the other, in the use of photography as a tool for social research. In the section <a href="visual_notes.html">Visual Notes</a>, you will find some of these explorations.
-            </p>
-
-            <p class="lang lang-es" lang="es">
-              Desigualdad social, sociología económica, vivienda y vida cotidiana, socialización económica y financiera, educación en contextos de encierro, interculturalidad, entornos materiales y organización social, y metodologías cualitativas y mixtas.
-            </p>
-
-            <p class="lang lang-es" lang="es">
-              Actualmente estoy indagando en metodologías visuales para la investigación social. Por un lado, a partir del uso de R y la programación para visualizar datos y, por otro, el uso de fotografías para la investigación social. En la sección <a href="visual_notes.html">Notas visuales</a> encontrarás algunas de estas exploraciones.
-            </p>
-            <!--
-              Texto de intereses de investigación.
-              Edita ambas versiones.
-            -->
-          </div>
-
-          <figure class="interests-image">
-            <img src="assets/img/photovoice.png" alt="Collage-style image related to research interests in urban life, visual methods, and social observation">
-            <!--
-              Imagen de esta sección.
-              Para cambiarla:
-              - reemplaza el nombre del archivo en src=
-              - cambia el texto alt=
-            -->
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         SECCIÓN VISUAL NOTES / NOTAS VISUALES
-         Vista previa breve del archivo visual.
-       ===================================================== -->
-    <section id="visual-notes-preview" class="content-section">
-      <div class="section-label" aria-hidden="true">✴︎</div>
-
-      <div class="section-body">
-        <div class="visual-preview-layout">
-          <div class="visual-preview-text">
-            <h2>
-              <span class="lang lang-en" lang="en">Visual Notes</span>
-              <span class="lang lang-es" lang="es">Notas visuales</span>
-            </h2>
-
-            <p class="lang lang-en" lang="en">
-              A small visual archive of photographs and visual observations connected to my interest in territory, everyday life, and visual methodologies. This section brings together selected images as part of an ongoing exploration of urban textures, material environments, and forms of social observation.
-            </p>
-
-            <p class="lang lang-es" lang="es">
-              Un pequeño archivo visual de fotografías y observaciones visuales vinculado a mi interés por el territorio, la vida cotidiana y las metodologías visuales. Esta sección reúne una selección de imágenes como parte de una exploración continua sobre texturas urbanas, entornos materiales y formas de observación social.
-            </p>
-
-            <p>
-              <a class="cv-link" href="visual_notes.html">
-                <span class="lang lang-en" lang="en">Open visual archive</span>
-                <span class="lang lang-es" lang="es">Abrir archivo visual</span>
-              </a>
-            </p>
-          </div>
-
-          <div class="visual-preview-grid" aria-label="Visual Notes preview">
-            <figure class="visual-preview-card">
-              <a href="visual_notes.html">
-                <img src="assets/img/photos_web/thumbs/humberstone-1.jpg" alt="Street view in Humberstone with houses, utility poles, and desert sky">
-              </a>
-              <figcaption>
-                <span class="lang lang-en" lang="en">Humberstone, 2022. Digital photograph.</span>
-                <span class="lang lang-es" lang="es">Humberstone, 2022. Fotografía digital.</span>
-              </figcaption>
-            </figure>
-
-            <figure class="visual-preview-card">
-              <a href="visual_notes.html">
-                <img src="assets/img/photos_web/thumbs/demonstration-santiago-2019.jpg" alt="Street demonstration in Santiago de Chile in 2019">
-              </a>
-              <figcaption>
-                <span class="lang lang-en" lang="en">Santiago de Chile, 2019. Digital photograph.</span>
-                <span class="lang lang-es" lang="es">Santiago de Chile, 2019. Fotografía digital.</span>
-              </figcaption>
-            </figure>
-
-            <figure class="visual-preview-card">
-              <a href="visual_notes.html">
-                <img src="assets/img/photos_web/thumbs/buildings-prague-analogue.jpg" alt="Analogue photograph of Prague architecture">
-              </a>
-              <figcaption>
-                <span class="lang lang-en" lang="en">Prague, 2023. Analogue photograph.</span>
-                <span class="lang lang-es" lang="es">Praga, 2023. Fotografía análoga.</span>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- =====================================================
-         SECCIÓN PROJECTS / PROYECTOS
-         Se reorganizó para separar:
-         - proyectos individuales/seleccionados
-         - proyectos colectivos
-         La tarjeta de "Education in Carceral Contexts" pasa al
-         bloque de proyectos colectivos.
-       ===================================================== -->
-    <section id="projects" class="content-section">
-      <div class="section-label" aria-hidden="true">✴︎</div>
-
-      <div class="section-body">
-        <div class="projects-layout">
-          <div class="projects-text">
-            <h2>
-              <span class="lang lang-en" lang="en">Selected Projects</span>
-              <span class="lang lang-es" lang="es">Proyectos en los que he participado</span>
-            </h2>
-
-            <!--
-              Bloque de proyectos académicos / de investigación seleccionados.
-            -->
-            <div class="project-card">
-              <h3>
-                <span class="lang lang-en" lang="en">Family Financial Socialization in Chile</span>
-                <span class="lang lang-es" lang="es">Socialización financiera familiar en Chile</span>
-              </h3>
-              <p class="lang lang-en" lang="en">
-                I participated, within the framework of FONDECYT Project No. 1220039, in research on financial socialization, affective grammars, and everyday economic practices in moderate-income Chilean households.
-              </p>
-              <p class="lang lang-es" lang="es">
-                Participé, en el marco del Proyecto FONDECYT N.º 1220039, en una investigación sobre socialización financiera, gramáticas afectivas y prácticas económicas cotidianas en hogares chilenos de ingresos moderados.
-              </p>
-            </div>
-
-            <div class="project-card">
-              <h3>
-                <span class="lang lang-en" lang="en">Interculturality, Cinema, and School Inclusion</span>
-                <span class="lang lang-es" lang="es">Interculturalidad, cine e inclusión escolar</span>
-              </h3>
-              <p class="lang lang-en" lang="en">
-                Qualitative and mixed-methods research on cinema, intercultural experiences, and social inclusion in public schools.
-              </p>
-              <p class="lang lang-es" lang="es">
-                Investigación cualitativa y con métodos mixtos sobre cine, experiencias interculturales e inclusión social en escuelas públicas.
-              </p>
-            </div>
-
-            <!--
-              Subtítulo del bloque de proyectos colectivos.
-              Este título es clickeable y lleva a la página específica.
-            -->
-            <h3 class="projects-subtitle">
-              <a href="collective_projects.html">
-                <span class="lang lang-en" lang="en">Collective Projects</span>
-                <span class="lang lang-es" lang="es">Proyectos colectivos</span>
-              </a>
-            </h3>
-
-            <!--
-              Recurso colectivo 1.
-            -->
-            <div class="project-card">
-              <h3>
-                <a href="collective_projects.html">
-                  <span class="lang lang-en" lang="en">Collective Mapping Bulletin with Colectiva Jengibre</span>
-                  <span class="lang lang-es" lang="es">Boletín de mapeo colectivo con Colectiva Jengibre</span>
-                </a>
-              </h3>
-
-              <p class="lang lang-en" lang="en">
-                A 2019 participatory bulletin developed with Colectiva Jengibre in Puente Alto, documenting the planning of a collective mapping process focused on territory, identity, inequality, and community organization.
-              </p>
-
-              <p class="lang lang-es" lang="es">
-                Boletín participativo elaborado en 2019 junto a Colectiva Jengibre en Puente Alto, que documenta la planificación de un proceso de mapeo colectivo centrado en territorio, identidad, desigualdad y organización comunitaria.
-              </p>
-
-              <p>
-                <a class="cv-link" href="assets/pdf/mapeo-colectivo-jengibre-2019.pdf" target="_blank" rel="noopener noreferrer">
-                  <span class="lang lang-en" lang="en">Open bulletin (PDF)</span>
-                  <span class="lang lang-es" lang="es">Abrir boletín (PDF)</span>
-                </a>
-              </p>
-              <!--
-                Enlace directo al PDF del boletín.
-                Más adelante puedes quitarlo de esta sección y dejar
-                solo el acceso desde collective_projects.html si prefieres.
-              -->
-            </div>
-
-            <!--
-              Recurso colectivo 2.
-              Por ahora no incluye PDF, pero queda ya ubicado dentro
-              del bloque correcto para que después agregues materiales.
-            -->
-            <div class="project-card">
-              <h3>
-                <a href="collective_projects.html">
-                  <span class="lang lang-en" lang="en">Education in Carceral Contexts</span>
-                  <span class="lang lang-es" lang="es">Educación en contextos de encierro</span>
-                </a>
-              </h3>
-              <p class="lang lang-en" lang="en">
-                Collective and socio-educational work focused on education in prison contexts from a gender perspective.
-              </p>
-              <p class="lang lang-es" lang="es">
-                Trabajo colectivo y socioeducativo centrado en la educación en contextos de encierro desde una perspectiva de género.
-              </p>
-            </div>
-          </div>
-
-          <figure class="projects-image">
-            <img src="assets/img/fondo_pagina.png" alt="Collage-style visual composition with hands, brackets, punctuation marks, and visual research motifs">
-            <!--
-              Imagen lateral de la sección Projects.
-              Puedes cambiar archivo y descripción.
-            -->
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         SECCIÓN CV
-         Aquí se muestra un enlace para descargar el CV en PDF.
-       ===================================================== -->
-    <section id="cv" class="content-section">
+    <section class="content-section">
       <div class="section-label" aria-hidden="true">✴︎</div>
 
       <div class="section-body">
         <h2>
-          <span class="lang lang-en" lang="en">Curriculum Vitae</span>
-          <span class="lang lang-es" lang="es">Currículum Vitae</span>
+          <span class="lang lang-en" lang="en">About this section</span>
+          <span class="lang lang-es" lang="es">Sobre esta sección</span>
         </h2>
 
         <p class="lang lang-en" lang="en">
-          The current academic CV is available in PDF format.
+          This page gathers photographs and visual interventions that I approach as forms of attention, registration, and inquiry. Rather than functioning only as illustrations, these images are part of an ongoing exploration of everyday space, urban textures, and the possibilities of visual methods for social observation.
         </p>
+
         <p class="lang lang-es" lang="es">
-          El CV académico actualizado está disponible en formato PDF.
+          Esta página reúne fotografías e intervenciones visuales que abordo como formas de atención, registro e indagación. Más que funcionar solo como ilustraciones, estas imágenes forman parte de una exploración continua sobre el espacio cotidiano, las texturas urbanas y las posibilidades de los métodos visuales para la observación social.
         </p>
+
+        <p class="site-rights-note">
+          <span class="lang lang-en" lang="en">
+            All images featured in this section are © Camila Ignacia González Silva. Please do not reproduce, redistribute, or use them without prior permission.
+          </span>
+          <span class="lang lang-es" lang="es">
+            Todas las imágenes de esta sección son © Camila Ignacia González Silva. Por favor, no reproducir, redistribuir ni utilizar sin autorización previa.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <h2>
+          <span class="lang lang-en" lang="en">Visual archive</span>
+          <span class="lang lang-es" lang="es">Archivo visual</span>
+        </h2>
+
+        <!-- El script inserta automáticamente aquí los grupos y tarjetas del archivo visual. -->
+        <!-- VISUAL_NOTES_AUTO_CONTENT -->
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <h2>
+          <span class="lang lang-en" lang="en">Navigation</span>
+          <span class="lang lang-es" lang="es">Navegación</span>
+        </h2>
 
         <p>
-          <a class="cv-link" href="assets/pdf/Camila_Gonzalez_Silva_CV.pdf" target="_blank" rel="noopener noreferrer">
-            <span class="lang lang-en" lang="en">Download academic CV (PDF)</span>
-            <span class="lang lang-es" lang="es">Descargar CV académico (PDF)</span>
+          <a class="cv-link" href="index.html">
+            <span class="lang lang-en" lang="en">Return to homepage</span>
+            <span class="lang lang-es" lang="es">Volver a la página principal</span>
           </a>
         </p>
-        <!--
-          Para cambiar el CV:
-          - guarda tu PDF en assets/pdf/
-          - cambia el nombre del archivo en href=
-          - puedes también cambiar el texto del botón
-        -->
-      </div>
-    </section>
-
-    <!-- =====================================================
-         SECCIÓN CONTACT / CONTACTO
-         Tiene dos columnas:
-         - texto
-         - imagen
-         En pantallas pequeñas, el CSS hará que la imagen pase abajo.
-       ===================================================== -->
-    <section id="contact" class="content-section">
-      <div class="section-label" aria-hidden="true">✴︎</div>
-
-      <div class="section-body">
-        <div class="contact-layout">
-          <div class="contact-text">
-            <h2>
-              <span class="lang lang-en" lang="en">Contact</span>
-              <span class="lang lang-es" lang="es">Contacto</span>
-            </h2>
-
-            <p>
-              <span class="lang lang-en" lang="en">Email:</span>
-              <span class="lang lang-es" lang="es">Correo:</span>
-              <a href="mailto:camila.gonzalez.3@ug.uchile.cl">camila.gonzalez.3@ug.uchile.cl</a>
-            </p>
-
-            <p class="contact-links">
-              <a href="https://github.com/cami-gs" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/cami-gs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://orcid.org/0009-0001-7562-7321" target="_blank" rel="noopener noreferrer">ORCID</a>
-            </p>
-            <!--
-              Aquí van tus datos de contacto.
-              Puedes cambiar:
-              - el correo
-              - GitHub
-              - LinkedIn
-              - ORCID
-              - agregar o quitar enlaces
-            -->
-          </div>
-
-          <figure class="contact-image">
-            <img src="assets/img/web-1.png" alt="Urban visual composition of Santiago de Chile in blue, green, and violet tones">
-            <!--
-              Imagen de la sección Contact.
-              Puedes reemplazarla por otra imagen.
-            -->
-          </figure>
-        </div>
       </div>
     </section>
   </main>
 
-  <!-- =========================================================
-       IMAGEN FINAL DEL SITIO
-       Sirve como cierre visual de la página.
-     ========================================================= -->
   <section class="closing-image">
-    <img src="assets/img/site-under-construction.jpeg" alt="Collage-style visual composition reading 'This site is currently under construction'">
-    <!--
-      Puedes cambiar esta imagen final si quieres otro cierre visual.
-    -->
+    <img src="assets/img/web-1.png" alt="Urban visual composition in blue, green, and violet tones">
   </section>
 
-  <!-- =========================================================
-       SCRIPT DE CAMBIO DE IDIOMA
-       Permite alternar entre inglés y español.
-       No conviene editarlo si no sabes JavaScript.
-     ========================================================= -->
   <script>
     const buttons = document.querySelectorAll('.lang-btn');
     const root = document.documentElement;
