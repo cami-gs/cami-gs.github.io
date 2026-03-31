@@ -1,0 +1,47 @@
+name: Generate visual_notes.html
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/img/photos_web/**'
+      - 'visual_notes.json'
+      - 'visual_notes.template.html'
+      - 'generate_visual_notes.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-visual-notes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate visual_notes.html
+        run: |
+          python3 generate_visual_notes.py \
+            --template visual_notes.template.html \
+            --data visual_notes.json \
+            --output visual_notes.html
+
+      - name: Commit updated visual_notes.html
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add visual_notes.html
+          git diff --staged --quiet || git commit -m "Auto-update visual_notes.html"
+
+      - name: Push changes
+        run: |
+          git push
