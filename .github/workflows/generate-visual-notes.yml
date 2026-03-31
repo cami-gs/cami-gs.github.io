@@ -1,32 +1,59 @@
+# Nombre visible del workflow dentro de la pestaña "Actions" de GitHub.
 name: Generate visual_notes.html
 
+# Define en qué casos se ejecuta este workflow.
 on:
+  # Se ejecuta automáticamente cuando haces push.
   push:
+    # Solo si el push fue a la rama main.
     branches:
       - main
+
+    # Solo si el push incluye cambios en alguna de estas rutas.
+    # Esto evita correr el workflow innecesariamente.
     paths:
+      # Cualquier archivo dentro de photos_web, incluyendo subcarpetas.
       - 'assets/img/photos_web/**'
+
+      # Si cambias los datos de las fotos.
       - 'visual_notes.json'
+
+      # Si cambias la plantilla base de la página.
       - 'visual_notes.template.html'
+
+      # Si cambias el script generador.
       - 'generate_visual_notes.py'
+
+  # Permite ejecutar el workflow manualmente desde la pestaña Actions.
   workflow_dispatch:
 
+# Permisos que tendrá el workflow.
 permissions:
+  # Le permite escribir en el repositorio:
+  # necesario para hacer commit y push del visual_notes.html generado.
   contents: write
 
+# Lista de trabajos que ejecutará el workflow.
 jobs:
+  # Nombre interno del job.
   build-visual-notes:
+    # Sistema operativo virtual donde correrá el job.
     runs-on: ubuntu-latest
 
+    # Pasos secuenciales del job.
     steps:
+      # Paso 1: descarga una copia del repositorio en la máquina virtual.
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Paso 2: instala Python para poder correr tu script.
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
+          # Usa cualquier versión estable reciente de Python 3.
           python-version: '3.x'
 
+      # Paso 3: ejecuta tu script para generar visual_notes.html.
       - name: Generate visual_notes.html
         run: |
           python3 generate_visual_notes.py \
@@ -34,14 +61,23 @@ jobs:
             --data visual_notes.json \
             --output visual_notes.html
 
+      # Paso 4: configura Git y hace commit solo si visual_notes.html cambió.
       - name: Commit updated visual_notes.html
         run: |
+          # Nombre del usuario automático que hará el commit.
           git config user.name "github-actions[bot]"
+
+          # Correo del bot de GitHub Actions.
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # Agrega el archivo generado al área de staging.
           git add visual_notes.html
+
+          # Si hay cambios reales en staging, hace commit.
+          # Si no hubo cambios, no hace nada.
           git diff --staged --quiet || git commit -m "Auto-update visual_notes.html"
 
+      # Paso 5: sube el commit de vuelta al repositorio.
       - name: Push changes
         run: |
           git push
