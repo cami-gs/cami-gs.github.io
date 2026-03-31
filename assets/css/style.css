@@ -472,6 +472,53 @@ main {
   text-align: left;
 }
 
+
+
+/* Visual notes preview on homepage */
+.visual-preview-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.visual-preview-text {
+  min-width: 0;
+}
+
+.visual-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.visual-preview-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.visual-preview-card a {
+  display: block;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.visual-preview-card img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+.visual-preview-card figcaption {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--muted);
+  text-align: left;
+}
+
 /* CV button */
 .cv-link {
   display: inline-block;
@@ -584,6 +631,16 @@ main {
   .projects-subtitle {
     font-size: 1.4rem;
     margin-top: 1.2rem;
+  }
+
+  .visual-preview-layout {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .visual-preview-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
   }
 
   .visual-notes-grid {
@@ -716,6 +773,15 @@ main {
 
   .project-card-image img {
     height: auto;
+  }
+
+  .visual-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .visual-preview-card figcaption {
+    font-size: 0.88rem;
   }
 
   .visual-notes-grid {
