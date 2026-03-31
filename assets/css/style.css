@@ -186,7 +186,6 @@ h1 {
 }
 
 .hero-image img {
-  filter: grayscale(100%);
   border: 1px solid var(--line);
 }
 
