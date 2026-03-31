@@ -448,8 +448,7 @@ main {
 
 .visual-note-card img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
   border: 1px solid var(--line);
 }
 
@@ -457,6 +456,7 @@ main {
   font-size: 0.92rem;
   line-height: 1.35;
   color: var(--muted);
+  text-align: left;
 }
 
 /* CV button */
