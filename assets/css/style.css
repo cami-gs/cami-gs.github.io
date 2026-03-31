@@ -659,4 +659,34 @@ main {
     margin-right: 0.7rem;
     margin-bottom: 0.3rem;
   }
+.project-card-with-image {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 240px);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.project-card-text {
+  min-width: 0;
+}
+
+.project-card-image {
+  margin: 0;
+  width: 100%;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .project-card-with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-image {
+    max-width: 220px;
+  }
 }
