@@ -415,6 +415,50 @@ main {
   display: block;
 }
 
+/* Visual notes rights */
+.site-rights-note {
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.98rem;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 780px;
+}
+
+/* Visual notes grid */
+.visual-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.visual-note-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.visual-note-card a {
+  display: block;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.visual-note-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.visual-note-card figcaption {
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
 /* CV button */
 .cv-link {
   display: inline-block;
@@ -527,6 +571,11 @@ main {
   .projects-subtitle {
     font-size: 1.4rem;
     margin-top: 1.2rem;
+  }
+
+  .visual-notes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 
   /* Contact responsive: text first, image below */
@@ -654,6 +703,15 @@ main {
 
   .project-card-image img {
     height: auto;
+  }
+
+  .visual-notes-grid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .visual-note-card figcaption {
+    font-size: 0.88rem;
   }
 
   /* Contact responsive: full width image below text */
