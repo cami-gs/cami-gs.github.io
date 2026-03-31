@@ -424,6 +424,19 @@ main {
   font-style: italic;
   max-width: 780px;
 }
+/* Visual archive groups by place */
+.visual-archive-group {
+  margin-top: 2rem;
+}
+
+.visual-archive-group:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.visual-archive-group .projects-subtitle {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
 
 /* Visual notes grid */
 .visual-notes-grid {
