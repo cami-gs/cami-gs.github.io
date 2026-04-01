@@ -230,30 +230,30 @@
       "group_en": "Prague",
       "group_es": "Praga",
       "items": [
+      {
+  "file": "builldings-prague-analogue1.jpg",
+  "alt_en": "Night view of a historic church and surrounding buildings in Prague, illuminated against the dark sky",
+  "caption_en": "Prague, 2023. Night view of a historic church with an illuminated dome, sculptural façade, and adjoining buildings in the city’s preserved architectural core. The image shows how religious and civic architecture remain strongly present in the contemporary urban landscape, not as ruin but as carefully maintained and visually staged heritage. As a sociological and ethnographic image, it highlights the continued visibility of historical architecture in everyday urban life and the ways in which preservation, lighting, and public presentation shape the experience of the city. Analogue photograph.",
+  "caption_es": "Praga, 2023. Vista nocturna de una iglesia histórica con cúpula iluminada, fachada escultórica y edificios contiguos dentro del núcleo arquitectónico preservado de la ciudad. La imagen muestra cómo la arquitectura religiosa y cívica permanece fuertemente presente en el paisaje urbano contemporáneo, no como ruina sino como patrimonio cuidadosamente mantenido y visualmente escenificado. Como imagen sociológica y etnográfica, destaca la presencia continua de la arquitectura histórica en la vida urbana cotidiana y las formas en que la preservación, la iluminación y la presentación pública modelan la experiencia de la ciudad. Fotografía análoga."
+},
         {
-          "file": "builldings-prague-analogue1.jpg",
-          "alt_en": "Analogue photograph of buildings in Prague",
-          "caption_en": "Prague, 2023. Analogue photograph.",
-          "caption_es": "Praga, 2023. Fotografía análoga."
-        },
+  "file": "builfings-prague-analogue2.jpg",
+  "alt_en": "Historic building façade in Prague with ornate architectural details and street-level urban surroundings",
+  "caption_en": "Prague, 2023. View of a historic building façade with ornate detailing, masonry surfaces, and street-level surroundings within the preserved architectural fabric of the city. The image draws attention to the continued everyday presence of historical built form, where architectural detail remains embedded in ordinary urban circulation rather than isolated as monument alone. As a sociological and ethnographic image, it highlights how preservation shapes not only the visual identity of the city but also the material conditions through which urban history is encountered in daily life. Analogue photograph.",
+  "caption_es": "Praga, 2023. Vista de la fachada de un edificio histórico con ornamentación, superficies de mampostería y entorno a escala de calle dentro del tejido arquitectónico preservado de la ciudad. La imagen dirige la atención hacia la presencia cotidiana y continua de formas construidas históricas, donde el detalle arquitectónico permanece inscrito en la circulación urbana ordinaria y no solo aislado como monumento. Como imagen sociológica y etnográfica, destaca cómo la preservación modela no solo la identidad visual de la ciudad, sino también las condiciones materiales a través de las cuales la historia urbana es experimentada en la vida diaria. Fotografía análoga."
+},
+       {
+  "file": "buildings-prague-digital.jpg",
+  "alt_en": "Front view of the Municipal House in Prague with its dome, mosaic, ornate ironwork entrance, banners, and parked cars along the street",
+  "caption_en": "Prague, 2023. Front view of the Municipal House with its dome, mosaic tympanum, ornate ironwork entrance, exhibition banners, and a row of parked cars along the street. The image shows how monumental architecture remains fully incorporated into the contemporary city, where a historically significant cultural building continues to structure everyday circulation, visual attention, and urban prestige. As a sociological and ethnographic image, it highlights the coexistence of preservation and ordinary use, showing how historical architecture is not only maintained as heritage but also embedded in the routine material life of the city. Digital photograph.",
+  "caption_es": "Praga, 2023. Vista frontal de la Casa Municipal con su cúpula, mosaico superior, entrada de fierro ornamental, pendones de exhibición y una fila de automóviles estacionados sobre la calle. La imagen muestra cómo la arquitectura monumental permanece plenamente incorporada a la ciudad contemporánea, donde un edificio cultural de gran relevancia histórica sigue organizando la circulación cotidiana, la atención visual y el prestigio urbano. Como imagen sociológica y etnográfica, destaca la coexistencia entre preservación y uso ordinario, mostrando cómo la arquitectura histórica no solo se mantiene como patrimonio, sino que también se inserta en la vida material rutinaria de la ciudad. Fotografía digital."
+},
         {
-          "file": "builfings-prague-analogue2.jpg",
-          "alt_en": "Second analogue photograph of buildings in Prague",
-          "caption_en": "Prague, 2023. Analogue photograph.",
-          "caption_es": "Praga, 2023. Fotografía análoga."
-        },
-        {
-          "file": "buildings-prague-digital.jpg",
-          "alt_en": "Digital photograph of buildings in Prague",
-          "caption_en": "Prague, 2023. Digital photograph.",
-          "caption_es": "Praga, 2023. Fotografía digital."
-        },
-        {
-          "file": "buildings-prague.jpg",
-          "alt_en": "Urban buildings in Prague",
-          "caption_en": "Prague, 2023. Digital photograph.",
-          "caption_es": "Praga, 2023. Fotografía digital."
-        }
+  "file": "buildings-prague.jpg",
+  "alt_en": "High-angle view of contemporary residential buildings in Prague with terraces, integrated vegetation, internal streets, parked cars, and older housing blocks in the background",
+  "caption_en": "Prague, 2023. High-angle view of contemporary residential buildings with terraces, integrated vegetation, internal streets, and parked cars, set against older mid-rise housing blocks in the background. The image shows the coexistence of different phases of urban development within the same residential landscape: newer buildings emphasize architectural variation, private outdoor space, and managed greenery, while the older blocks follow a more repetitive and standardized logic. As a sociological and ethnographic image, it highlights how housing form, design, and maintenance organize different residential environments within the contemporary city. Digital photograph.",
+  "caption_es": "Praga, 2023. Vista en altura de edificios residenciales contemporáneos con terrazas, vegetación integrada, calles interiores y automóviles estacionados, enmarcados por bloques habitacionales más antiguos al fondo. La imagen muestra la coexistencia de distintas fases de desarrollo urbano dentro de un mismo paisaje residencial: los edificios más nuevos enfatizan variación arquitectónica, espacio exterior privado y verdor gestionado, mientras que los bloques más antiguos responden a una lógica más repetitiva y estandarizada. Como imagen sociológica y etnográfica, destaca cómo la forma de la vivienda, el diseño y el mantenimiento organizan distintos entornos residenciales dentro de la ciudad contemporánea. Fotografía digital."
+}
       ]
     }
   ]
