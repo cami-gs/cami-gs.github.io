@@ -424,6 +424,7 @@ main {
   font-style: italic;
   max-width: 780px;
 }
+
 /* Visual archive groups by place */
 .visual-archive-group {
   margin-top: 2rem;
@@ -471,8 +472,6 @@ main {
   color: var(--muted);
   text-align: left;
 }
-
-
 
 /* Visual notes preview on homepage */
 .visual-preview-layout {
@@ -548,17 +547,61 @@ main {
   text-decoration: underline;
 }
 
-/* Closing image */
-.closing-image {
+/* =========================================================
+   CIERRE DEL SITIO: NOTA FINAL + IMAGEN
+   Imagen a la izquierda, texto a la derecha
+   ========================================================= */
+
+.closing-wrap {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.5rem 2rem 4rem 2rem;
+  padding: 2.4rem 2rem 4rem 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.closing-wrap .section-body {
+  width: 100%;
+}
+
+.closing-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.closing-image {
+  margin: 0;
+  width: 100%;
 }
 
 .closing-image img {
   width: 100%;
+  max-width: 320px;
   height: auto;
   display: block;
+  object-fit: contain;
+  border: 1px solid var(--line);
+}
+
+.closing-text {
+  min-width: 0;
+}
+
+.closing-text p {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+  color: #8b90d8;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 100%;
+}
+
+.closing-text strong {
+  color: #8b90d8;
+  font-style: italic;
+  font-weight: 600;
 }
 
 /* Tablet */
@@ -606,8 +649,17 @@ main {
     padding: 2.6rem 1.5rem 4rem 1.5rem;
   }
 
-  .closing-image {
-    padding: 2.2rem 1.5rem 3.5rem 1.5rem;
+  .closing-wrap {
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+  }
+
+  .closing-layout {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .closing-image img {
+    max-width: 300px;
   }
 
   .interests-layout {
@@ -744,8 +796,21 @@ main {
     padding: 2rem 1.2rem 3rem 1.2rem;
   }
 
-  .closing-image {
-    padding: 2rem 1.2rem 3rem 1.2rem;
+  .closing-wrap {
+    padding: 1.8rem 1.2rem 3rem 1.2rem;
+  }
+
+  .closing-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .closing-image img {
+    max-width: 240px;
+  }
+
+  .closing-text p {
+    font-size: 0.95rem;
   }
 
   .interests-image {
@@ -838,94 +903,4 @@ main {
     margin-right: 0.7rem;
     margin-bottom: 0.3rem;
   }
-  /* 
-   CIERRE DEL SITIO: NOTA FINAL + IMAGEN
-   Dos columnas: imagen izquierda, texto derecha
- */
-
-.closing-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.2rem 2rem 4rem 2rem;
-  display: grid;
-  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
-  gap: 1.5rem;
-  align-items: start;
-}
-
-/* Nota final */
-.closing-note {
-  border-bottom: none;
-  padding: 0;
-  grid-column: 2;
-  color: #7f86d6;
-}
-
-.closing-note .section-label {
-  color: #7f86d6;
-}
-
-.closing-note .section-body p {
-  color: #7f86d6;
-  font-style: italic;
-  font-size: 1.02rem;
-  line-height: 1.55;
-  max-width: 100%;
-}
-
-.closing-note strong {
-  color: #7f86d6;
-  font-style: italic;
-  font-weight: 600;
-}
-
-/* Imagen final */
-.closing-image {
-  grid-column: 1;
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-}
-
-.closing-image img {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-  .closing-wrap {
-    padding: 2rem 1.5rem 3.5rem 1.5rem;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .closing-image,
-  .closing-note {
-    grid-column: auto;
-  }
-
-  .closing-image img {
-    max-width: 320px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 640px) {
-  .closing-wrap {
-    padding: 1.8rem 1.2rem 3rem 1.2rem;
-    gap: 1rem;
-  }
-
-  .closing-note .section-body p {
-    font-size: 0.96rem;
-  }
-
-  .closing-image img {
-    max-width: 260px;
-  }
-}
 }
