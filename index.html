@@ -492,6 +492,544 @@
       </div>
     </section>
   </main>
+<!DOCTYPE html>
+<!--
+  Tipo de documento HTML5.
+  No es necesario cambiar esta línea.
+-->
+
+<html lang="en" data-lang="en">
+<!--
+  lang="en" indica que el sitio carga inicialmente en inglés.
+  data-lang="en" permite que el botón de idioma muestre inglés por defecto.
+  Si quieres que el sitio abra primero en español, cambia ambos a "es".
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <!--
+    Permite que se vean bien tildes, eñes y caracteres especiales.
+    No conviene cambiar esto.
+  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    Hace que el sitio se adapte bien a celulares y tablets.
+    No conviene cambiar esto.
+  -->
+
+  <title>Camila Ignacia González Silva</title>
+  <!--
+    Este es el título que aparece en la pestaña del navegador.
+    Cámbialo por tu nombre.
+  -->
+
+  <meta name="description" content="Academic and professional portfolio of Camila Ignacia González Silva: sociology, research, projects, visual notes, and CV.">
+  <!--
+    Esta es una breve descripción del sitio.
+    Puede aparecer en buscadores.
+    Cámbiala por una descripción corta de tu perfil.
+  -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--
+    Esta línea conecta el HTML con tu archivo de estilos CSS.
+    Solo cámbiala si el archivo style.css está en otra carpeta o tiene otro nombre.
+  -->
+</head>
+
+<body>
+  <!-- =========================================================
+       ENCABEZADO PRINCIPAL / HERO
+       Aquí va la presentación inicial del sitio:
+       - nombre
+       - descripción breve
+       - menú
+       - imagen principal
+     ========================================================= -->
+
+  <header class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-topline">
+        <p class="eyebrow">
+          <!--
+            Frase corta que resume el perfil.
+            Hay una versión en inglés y una en español.
+            Cambia ambos textos si adaptas esta plantilla.
+          -->
+          <span class="lang lang-en" lang="en">Sociology · Material Environments · Everyday Life · Social Organization</span>
+          <span class="lang lang-es" lang="es">Sociología · Entornos Materiales · Vida Cotidiana · Organización Social</span>
+        </p>
+
+        <div class="language-switch" aria-label="Language switcher">
+          <!--
+            Botones para cambiar entre inglés y español.
+            No conviene modificar la estructura.
+            Solo usa esta parte tal como está.
+          -->
+          <button class="lang-btn active" data-lang="en" type="button" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="es" type="button" aria-pressed="false">ES</button>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Camila Ignacia González Silva</h1>
+          <!--
+            Tu nombre principal.
+            Cámbialo por tu nombre completo o nombre profesional.
+          -->
+
+          <p class="lead lang lang-en" lang="en">
+            I am a Chilean sociologist with a committed interest in studying how social inequalities, institutional life, and material environments shape everyday life. My work seeks to combine qualitative research, visual inquiry, and digital tools to explore how housing, space, and social organization mediate social reproduction in concrete urban contexts.
+          </p>
+
+        <p class="lead lang lang-es" lang="es">
+          Soy socióloga, chilena, y mi agenda de trabajo se centra en estudiar cómo las desigualdades sociales, la vida institucional y los entornos materiales configuran la vida cotidiana. Mi práctica busca combinar investigación cualitativa, indagación visual y herramientas digitales para explorar cómo la vivienda, el espacio y la organización social median la reproducción social en contextos urbanos concretos.
+          </p>
+          <!--
+            Este es el texto breve de presentación.
+            Debes cambiar ambas versiones: inglés y español.
+          -->
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <!--
+              Menú principal del sitio.
+              Cada enlace lleva a una sección de la misma página
+              o a una subpágina del sitio.
+            -->
+
+            <a href="#about">
+              <span class="lang lang-en" lang="en">About</span>
+              <span class="lang lang-es" lang="es">Sobre mí</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#interests">
+              <span class="lang lang-en" lang="en">Research Interests</span>
+              <span class="lang lang-es" lang="es">Intereses de investigación</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#projects">
+              <span class="lang lang-en" lang="en">Projects</span>
+              <span class="lang lang-es" lang="es">Proyectos</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="visual_notes.html">
+              <span class="lang lang-en" lang="en">Visual Notes</span>
+              <span class="lang lang-es" lang="es">Notas visuales</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#cv">
+              <span class="lang lang-en" lang="en">CV</span>
+              <span class="lang lang-es" lang="es">CV</span>
+            </a>
+
+            <span class="nav-separator" aria-hidden="true">✴︎</span>
+
+            <a href="#contact">
+              <span class="lang lang-en" lang="en">Contact</span>
+              <span class="lang lang-es" lang="es">Contacto</span>
+            </a>
+          </nav>
+        </div>
+
+        <figure class="hero-image">
+          <img src="assets/img/web-icon-1.png" alt="Illustrated hands arranging floating blocks with coding symbols, brackets, punctuation marks, and a green eye on a dark purple background.">
+          <!-- 
+            Imagen principal del encabezado.
+            Para cambiarla:
+            1. Guarda tu imagen en la carpeta assets/img/
+            2. Cambia el nombre del archivo en src=
+            3. Cambia el texto alt= describiendo la imagen
+          -->
+
+          <figcaption>
+            <span class="lang lang-en" lang="en">AI-generated digital illustration used as visual support on this page.</span>
+            <span class="lang lang-es" lang="es">Ilustración digital generada con IA, utilizada como apoyo visual en esta página.</span>
+          </figcaption>
+          <!--
+            Pie de foto de la imagen principal.
+            Cambia ambas versiones si usas otra imagen.
+          -->
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       CONTENIDO PRINCIPAL DEL SITIO
+     ========================================================= -->
+
+  <main>
+
+    <!-- =====================================================
+         SECCIÓN ABOUT / SOBRE MÍ
+         Aquí va una presentación más desarrollada.
+       ===================================================== -->
+    <section id="about" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+      <!--
+        Este símbolo decorativo acompaña el título de la sección.
+        No es necesario cambiarlo.
+      -->
+
+      <div class="section-body">
+        <h2>
+          <span class="lang lang-en" lang="en">About</span>
+          <span class="lang lang-es" lang="es">Sobre mí</span>
+        </h2>
+
+        <p class="lang lang-en" lang="en">
+          I am a Chilean sociologist working in social research with qualitative and mixed methods. My trajectory has developed through research on household economies, intercultural school contexts, and education in carceral settings, with a growing interest in housing, everyday life, and the material organization of social inequalities.
+        </p>
+
+        <p class="lang lang-en" lang="en">
+          I also value collective work as part of how I learn, research, and produce knowledge. Alongside my sociological training, I am currently studying Programming and Systems Analysis in order to strengthen my research, data management, and dissemination skills. I spend much of my time reading, working on the computer, and learning about digital tools, and in my free time I am also interested in photography and analogue collage as ways of exploring social perspectives. For that reason, I want this page to function not only as a portfolio, but also as a useful resource for anyone who may want to explore the materials gathered here.
+        </p>
+
+        <p class="lang lang-es" lang="es">
+          Soy socióloga chilena y trabajo en investigación social con metodologías cualitativas y mixtas. Mi trayectoria se ha desarrollado a través de investigaciones sobre economías domésticas, contextos escolares interculturales y educación en contextos de encierro, con un interés creciente por la vivienda, la vida cotidiana y la organización material de las desigualdades sociales.
+        </p>
+
+        <p class="lang lang-es" lang="es">
+          También valoro el trabajo colectivo como parte de mi forma de aprender, investigar y producir conocimiento. Junto con mi formación sociológica, actualmente estudio Programación y Análisis de Sistemas para fortalecer mis herramientas de investigación, gestión de información y difusión. Paso gran parte de mi tiempo leyendo, trabajando en el computador y aprendiendo sobre herramientas digitales, y en mis tiempos libres también me interesa la fotografía y el collage análogo como formas de explorar miradas sobre lo social. Por eso, me interesa que esta página funcione no solo como un portafolio, sino también como un recurso útil para quien quiera consultar los materiales reunidos aquí.
+        </p>
+        <!--
+          Texto principal de la sección Sobre mí.
+          Edita ambas versiones con tu propia presentación.
+        -->
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN RESEARCH INTERESTS / INTERESES DE INVESTIGACIÓN
+         Esta sección tiene dos columnas:
+         - texto
+         - imagen
+       ===================================================== -->
+    <section id="interests" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <div class="interests-layout">
+          <!--
+            Este contenedor organiza texto e imagen en columnas.
+            No conviene cambiar su estructura.
+          -->
+
+          <div class="interests-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Research Interests</span>
+              <span class="lang lang-es" lang="es">Intereses de investigación</span>
+            </h2>
+
+            <div class="lang lang-en" lang="en">
+              <ul>
+                <li><strong>Substantive Problems:</strong> Social inequalities, housing, domestic life, social reproduction, and the material organization of everyday economic life.</li>
+                <li><strong>Analytical Lens:</strong> Institutional life, discursive repertoires, social organization, and the mediations of material environments, analysed through gender, class, and intersectional perspectives.</li>
+                <li><strong>Methodological Approach:</strong> Situated qualitative research, mixed methods, and visual inquiry. This includes interviewing, focus groups, coding, audit-trail documentation, and digital tools such as <code>R</code>, programming, and photography as active forms of observation and analysis.</li>
+              </ul>
+            </div>
+
+            <div class="lang lang-es" lang="es">
+              <ul>
+                <li><strong>Problemas sustantivos:</strong> Desigualdades sociales, vivienda, vida doméstica, reproducción social y la organización material de la vida económica cotidiana.</li>
+                <li><strong>Lente analítico:</strong> Vida institucional, repertorios discursivos, organización social y las mediaciones de los entornos materiales, analizados desde perspectivas de género, clase e interseccionalidad.</li>
+                <li><strong>Apuesta metodológica:</strong> Investigación cualitativa situada, métodos mixtos e indagación visual. Esto incluye entrevistas, grupos focales, codificación, documentación de audit-trail y herramientas digitales como <code>R</code>, programación y fotografía como formas activas de observación y análisis.</li>
+              </ul>
+            </div>
+            <!--
+              Texto de intereses de investigación.
+              Edita ambas versiones.
+            -->
+          </div>
+
+          <figure class="interests-image">
+            <img src="assets/img/photovoice.png" alt="Collage-style image related to research interests in urban life, visual methods, and social observation">
+            <!--
+              Imagen de esta sección.
+              Para cambiarla:
+              - reemplaza el nombre del archivo en src=
+              - cambia el texto alt=
+            -->
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN VISUAL NOTES / NOTAS VISUALES
+         Vista previa breve del archivo visual.
+       ===================================================== -->
+    <section id="visual-notes-preview" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <div class="visual-preview-layout">
+          <div class="visual-preview-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Visual Notes</span>
+              <span class="lang lang-es" lang="es">Notas visuales</span>
+            </h2>
+
+            <p class="lang lang-en" lang="en">
+              A small visual archive of photographs and visual observations connected to my interest in territory, everyday life, and visual methodologies. These images function not only as illustration, but also as situated sociological observations. Photography operates here as an active way of thinking about material configurations, urban rhythms, and forms of everyday social organization.
+            </p>
+
+            <p class="lang lang-es" lang="es">
+              Un pequeño archivo visual de fotografías y observaciones visuales vinculado a mi interés por el territorio, la vida cotidiana y las metodologías visuales. Estas imágenes funcionan no solo como ilustración, sino también como observaciones sociológicas situadas. La fotografía opera aquí como una forma activa de pensar configuraciones materiales, ritmos urbanos y formas de organización social cotidiana.
+            </p>
+
+            <p>
+              <a class="cv-link" href="visual_notes.html">
+                <span class="lang lang-en" lang="en">Open visual archive</span>
+                <span class="lang lang-es" lang="es">Abrir archivo visual</span>
+              </a>
+            </p>
+          </div>
+
+          <div class="visual-preview-grid" aria-label="Visual Notes preview">
+            <figure class="visual-preview-card">
+              <a href="visual_notes.html">
+                <img src="assets/img/photos_web/thumbs/humberstone-1.jpg" alt="Street view in Humberstone with houses, utility poles, and desert sky">
+              </a>
+              <figcaption>
+                <span class="lang lang-en" lang="en">Humberstone, 2022. Digital photograph. Observing the remnants of company-town infrastructure and the persistent material traces of extractive economies in the desert landscape.</span>
+                <span class="lang lang-es" lang="es">Humberstone, 2022. Fotografía digital. Observación de los restos de la infraestructura de los company towns y las huellas materiales persistentes de las economías extractivas en el paisaje desértico.</span>
+              </figcaption>
+            </figure>
+
+            <figure class="visual-preview-card">
+              <a href="visual_notes.html">
+                <img src="assets/img/photos_web/thumbs/demonstration-santiago-2019.jpg" alt="Street demonstration in Santiago de Chile in 2019">
+              </a>
+              <figcaption>
+                <span class="lang lang-en" lang="en">Santiago de Chile, 2019. Digital photograph. Urban space as an infrastructure of political dispute: observing the temporary reorganization of streets and spatial routines during social protest.</span>
+                <span class="lang lang-es" lang="es">Santiago de Chile, 2019. Fotografía digital. El espacio urbano como infraestructura de disputa política: observando la reorganización temporal de las calles y las rutinas espaciales durante la protesta social.</span>
+              </figcaption>
+            </figure>
+
+            <figure class="visual-preview-card">
+              <a href="visual_notes.html">
+                <img src="assets/img/photos_web/thumbs/buildings-prague-analogue.jpg" alt="Analogue photograph of Prague architecture">
+              </a>
+              <figcaption>
+                <span class="lang lang-en" lang="en">Prague, 2023. Analogue photograph. Capturing the coexistence of different building temporalities and the density of residential material environments.</span>
+                <span class="lang lang-es" lang="es">Praga, 2023. Fotografía análoga. Capturando la coexistencia de distintas temporalidades edilicias y la densidad de los entornos materiales residenciales.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN PROJECTS / PROYECTOS
+         Se reorganizó para separar:
+         - proyectos individuales/seleccionados
+         - proyectos colectivos
+         La tarjeta de "Education in Carceral Contexts" pasa al
+         bloque de proyectos colectivos.
+       ===================================================== -->
+    <section id="projects" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <div class="projects-layout">
+          <div class="projects-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Projects</span>
+              <span class="lang lang-es" lang="es">Proyectos</span>
+            </h2>
+
+            <p class="lang lang-en" lang="en" style="margin-bottom: 2rem;">
+              While my empirical cases range from household economies to schools and prisons, they are connected by a shared interest in how everyday life is organized through institutions, situated inequalities, and material mediations, as well as by my sustained involvement in qualitative research, collective work, and methodological systematization.
+            </p>
+            <p class="lang lang-es" lang="es" style="margin-bottom: 2rem;">
+              Aunque mis casos empíricos abarcan desde economías domésticas hasta escuelas y cárceles, todos se articulan por un interés común en cómo la vida cotidiana se organiza a través de instituciones, desigualdades situadas y mediaciones materiales, así como por mi participación sostenida en investigación cualitativa, trabajo colectivo y sistematización metodológica.
+            </p>
+
+            <div class="project-card">
+              <h3>
+                <span class="lang lang-en" lang="en">Family Financial Socialization in Chile</span>
+                <span class="lang lang-es" lang="es">Socialización financiera familiar en Chile</span>
+              </h3>
+              <p class="lang lang-en" lang="en">
+                Within the framework of ANID FONDECYT Project No. 1220039, this project investigated financial socialization and everyday economic practices in Chilean households. My role included follow-up and in-depth interviews, the design of a participatory timeline tool, qualitative coding in Atlas.ti, and participation in the analysis of the research corpus and in academic writing. This experience allowed me to strengthen my skills in methodological design and qualitative analysis, while also showing how financial socialization is anchored in domestic life, care, debt, and the everyday organization of resources.
+              </p>
+              <p class="lang lang-es" lang="es">
+                En el marco del Proyecto ANID FONDECYT N.º 1220039, esta investigación analizó la socialización financiera y las prácticas económicas cotidianas en hogares chilenos. Mi rol incluyó entrevistas de seguimiento y en profundidad, el diseño de una herramienta participativa basada en una línea de tiempo, la codificación cualitativa en Atlas.ti y la participación en el análisis del corpus y en la escritura académica. Esta experiencia fortaleció mis capacidades en diseño metodológico y análisis cualitativo, y al mismo tiempo me permitió observar cómo la socialización financiera se ancla en la vida doméstica, el cuidado, la deuda y la organización cotidiana de los recursos.
+              </p>
+            </div>
+
+            <div class="project-card">
+              <h3>
+                <span class="lang lang-en" lang="en">Interculturality, Cinema, and School Inclusion</span>
+                <span class="lang lang-es" lang="es">Interculturalidad, cine e inclusión escolar</span>
+              </h3>
+              <p class="lang lang-en" lang="en">
+                This ANID FONDECYT Initiation Project (No. 11240230) examined cinema, intercultural experiences, and social inclusion in public schools in O’Higgins and Maule. As Technical Research Staff, I participated in methodological decision-making, maintained decision logs and memos, designed focus-group guides, moderated part of the fieldwork, coded qualitative material, and systematized findings in Atlas.ti 25. Methodologically, it strengthened my training in traceable qualitative research through audit-trail documentation. Conceptually, it allowed me to analyse the school as an institutional space where inclusion, coexistence, and difference are organized.
+              </p>
+              <p class="lang lang-es" lang="es">
+                Este Proyecto ANID FONDECYT de Iniciación (N.º 11240230) investigó el cine, las experiencias interculturales y la inclusión social en escuelas públicas de O’Higgins y Maule. Como personal técnico de investigación, participé en la toma de decisiones metodológicas, mantuve decision logs y memos, diseñé guías de grupos focales, moderé parte del trabajo de campo, codifiqué material cualitativo y sistematicé hallazgos en Atlas.ti 25. Metodológicamente, fortaleció mi formación en investigación cualitativa trazable mediante documentación de audit-trail. Conceptualmente, me permitió analizar la escuela como un espacio institucional donde se organizan la inclusión, la convivencia y la diferencia.
+              </p>
+            </div>
+
+            <h3 class="projects-subtitle">
+              <a href="collective_projects.html">
+                <span class="lang lang-en" lang="en">Collective Projects</span>
+                <span class="lang lang-es" lang="es">Proyectos colectivos</span>
+              </a>
+            </h3>
+
+            <div class="project-card">
+              <h3>
+                <a href="collective_projects.html">
+                  <span class="lang lang-en" lang="en">Collective Mapping Bulletin with Colectiva Jengibre</span>
+                  <span class="lang lang-es" lang="es">Boletín de mapeo colectivo con Colectiva Jengibre</span>
+                </a>
+              </h3>
+              <p class="lang lang-en" lang="en">
+                Developed with Colectiva Jengibre in Puente Alto in 2019, this project documented the planning of a collective mapping process focused on territory, identity, and inequality. It is meaningful in my trajectory because it connects participatory work, situated knowledge production, territorial observation, and collective reflection on space.
+              </p>
+              <p class="lang lang-es" lang="es">
+                Desarrollado junto a Colectiva Jengibre en Puente Alto en 2019, este proyecto documentó la planificación de un proceso de mapeo colectivo centrado en territorio, identidad y desigualdad. Es importante en mi recorrido porque articula trabajo participativo, producción de conocimiento situado, observación territorial y reflexión colectiva sobre el espacio.
+              </p>
+              <p>
+                <a class="cv-link" href="assets/pdf/mapeo-colectivo-jengibre-2019.pdf" target="_blank" rel="noopener noreferrer">
+                  <span class="lang lang-en" lang="en">Open bulletin (PDF)</span>
+                  <span class="lang lang-es" lang="es">Abrir boletín (PDF)</span>
+                </a>
+              </p>
+            </div>
+
+            <div class="project-card">
+              <h3>
+                <a href="collective_projects.html">
+                  <span class="lang lang-en" lang="en">Education in Carceral Contexts</span>
+                  <span class="lang lang-es" lang="es">Educación en contextos de encierro</span>
+                </a>
+              </h3>
+              <p class="lang lang-en" lang="en">
+                Through Colectiva Ketra (2017–2025), this initiative developed socio-educational work with incarcerated women from a gender perspective. As coordinator and educator, I participated in teaching, participatory methodologies, collective self-evaluation, the systematization of organizational experience, and the coordination of community and institutional networks. This long-term engagement was central to my formation because it strengthened my understanding of confinement as a material and institutional condition of everyday life, while also consolidating my commitment to collective work as a way of producing situated knowledge.
+              </p>
+              <p class="lang lang-es" lang="es">
+                A través de Colectiva Ketra (2017–2025), esta iniciativa desarrolló trabajo socioeducativo con mujeres privadas de libertad desde una perspectiva de género. Como coordinadora y educadora, participé en docencia, metodologías participativas, autoevaluación colectiva, sistematización de la experiencia organizacional y articulación de redes comunitarias e institucionales. Este compromiso de largo plazo fue central en mi formación porque fortaleció mi comprensión del encierro como una condición material e institucional de la vida cotidiana, y al mismo tiempo consolidó mi compromiso con el trabajo colectivo como una forma de producir conocimiento situado.
+              </p>
+            </div>
+          </div>
+
+          <figure class="projects-image">
+            <img src="assets/img/fondo_pagina.png" alt="Collage-style visual composition with hands, brackets, punctuation marks, and visual research motifs">
+            <!--
+              Imagen lateral de la sección Projects.
+              Puedes cambiar archivo y descripción.
+            -->
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN CV
+         Aquí se muestra un enlace para descargar el CV en PDF.
+       ===================================================== -->
+    <section id="cv" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <h2>
+          <span class="lang lang-en" lang="en">Curriculum Vitae</span>
+          <span class="lang lang-es" lang="es">Currículum Vitae</span>
+        </h2>
+
+        <p class="lang lang-en" lang="en">
+          The current academic CV is available in PDF format.
+        </p>
+        <p class="lang lang-es" lang="es">
+          El CV académico actualizado está disponible en formato PDF.
+        </p>
+
+        <p>
+          <a class="cv-link" href="assets/pdf/Camila_Gonzalez_Silva_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="lang lang-en" lang="en">Download academic CV (PDF)</span>
+            <span class="lang lang-es" lang="es">Descargar CV académico (PDF)</span>
+          </a>
+        </p>
+        <!--
+          Para cambiar el CV:
+          - guarda tu PDF en assets/pdf/
+          - cambia el nombre del archivo en href=
+          - puedes también cambiar el texto del botón
+        -->
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN CONTACT / CONTACTO
+         Tiene dos columnas:
+         - texto
+         - imagen
+         En pantallas pequeñas, el CSS hará que la imagen pase abajo.
+       ===================================================== -->
+    <section id="contact" class="content-section">
+      <div class="section-label" aria-hidden="true">✴︎</div>
+
+      <div class="section-body">
+        <div class="contact-layout">
+          <div class="contact-text">
+            <h2>
+              <span class="lang lang-en" lang="en">Contact</span>
+              <span class="lang lang-es" lang="es">Contacto</span>
+            </h2>
+
+            <p>
+              <span class="lang lang-en" lang="en">Email:</span>
+              <span class="lang lang-es" lang="es">Correo:</span>
+              <a href="mailto:camila.gonzalez.3@ug.uchile.cl">camila.gonzalez.3@ug.uchile.cl</a>
+            </p>
+
+            <p class="contact-links">
+              <a href="https://github.com/cami-gs" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/cami-gs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://orcid.org/0009-0001-7562-7321" target="_blank" rel="noopener noreferrer">ORCID</a>
+            </p>
+            <!--
+              Aquí van tus datos de contacto.
+              Puedes cambiar:
+              - el correo
+              - GitHub
+              - LinkedIn
+              - ORCID
+              - agregar o quitar enlaces
+            -->
+          </div>
+
+          <figure class="contact-image">
+            <img src="assets/img/web-1.png" alt="Urban visual composition of Santiago de Chile in blue, green, and violet tones">
+            <!--
+              Imagen de la sección Contact.
+              Puedes reemplazarla por otra imagen.
+            -->
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- =========================================================
+       CIERRE DEL SITIO: NOTA FINAL + IMAGEN
+     ========================================================= -->
+  <section class="closing-wrap">
     <!-- =========================================================
          NOTA FINAL SOBRE EL SITIO / ABOUT THIS SITE
          Breve nota metodológica sobre la construcción de la web.
